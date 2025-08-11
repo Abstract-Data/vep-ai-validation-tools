@@ -7,7 +7,7 @@ name = "uv-template-project"
 version = "0.1.14"
 description = "A Python package built with UV"
 readme = "README.md"
-requires-python = ">=3.8.1"
+requires-python = ">=3.9.1"
 license = {text = "MIT"}
 authors = [
     {name = "Template Author", email = "author@example.com"},
@@ -25,7 +25,17 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
 ]
 dependencies = [
-    # Add your project dependencies here
+    "icecream>=2.1.5",
+    "phonenumbers>=9.0.11",
+    "pydantic>=2.9.2",
+    "pydantic-ai[eval,logfire,mcp]>=0.6.2",
+    "pydantic-extra-types>=2.10.5",
+    "pydantic-graph>=0.6.2",
+    "python-dotenv>=1.1.1",
+    "tomli>=2.2.1",
+    "transformers[torch]>=4.55.0",
+    "usaddress>=0.5.16",
+    "usaddress-scourgify>=0.6.0",
 ]
 
 [project.optional-dependencies]
@@ -203,4 +213,9 @@ exclude = [
     ".uv",
     ".mypy_cache",
     ".pytest_cache",
+]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=3.5.0",
 ]
