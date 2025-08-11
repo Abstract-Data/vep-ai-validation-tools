@@ -1,0 +1,242 @@
+# 🚀 UV Project Template Guide
+
+This project serves as a comprehensive template for creating new UV-based Python projects with professional-grade automation and tooling.
+
+## ✨ Features
+
+- **🚀 UV Integration** - Fast dependency resolution and project management
+- **🔧 Pre-configured Tools** - Black, isort, flake8, mypy, pytest, pre-commit
+- **🤖 GitHub Actions** - Automated testing, linting, and releases
+- **📝 Issue Templates** - Structured bug reports, feature requests, and discussions
+- **🔒 Security** - Security policy and vulnerability scanning
+- **📚 Documentation** - Comprehensive guides and troubleshooting
+- **🔄 Automatic Setup** - Template automatically configures itself on first `uv sync`
+
+## 🚀 Quick Start
+
+### 1. Use this template
+
+```bash
+# Clone this template
+git clone <your-template-repo> my-new-project
+cd my-new-project
+
+# Remove template-specific files
+rm -rf .git
+```
+
+### 2. Install dependencies (Automatic Setup)
+
+```bash
+# Install project dependencies - this will automatically set up the template!
+uv sync
+```
+
+**What happens automatically:**
+
+- ✅ Template variables are replaced interactively
+- ✅ Template git history is removed
+- ✅ Fresh git repository is created
+- ✅ Pre-commit hooks are installed
+- ✅ Project is ready for development
+
+### 3. Start developing
+
+```bash
+# Your project is now ready!
+# Start coding in src/{{ package_name }}/
+# Add tests in tests/
+# Update documentation in docs/
+```
+
+## 🔄 Post-Sync Setup Feature
+
+This template includes a **post-sync setup system** that should be run after `uv sync` to configure the template. Here's how it works:
+
+### How It Works
+
+1. **UV Sync** - Install dependencies with `uv sync`
+2. **Post-Sync Script** - Run `./.scripts/uv-post-sync.sh` to configure the template
+3. **Template Detection** - Automatically detects if this is a fresh template clone
+4. **Interactive Setup** - Prompts for project details and replaces template variables
+5. **Git Cleanup** - Removes template history and creates fresh repository
+6. **Pre-commit Setup** - Configures pre-commit hooks automatically
+
+### Usage
+
+```bash
+# Install dependencies
+uv sync
+
+# Run post-sync setup
+./.scripts/uv-post-sync.sh
+```
+
+### Manual Override
+
+If you prefer manual setup or need to re-run the setup:
+
+```bash
+# Run comprehensive setup manually
+./.scripts/setup-template.sh
+
+# Or run individual steps
+./.scripts/replace-template-vars.sh
+./.scripts/setup-uv-project.sh
+```
+
+## 📁 Project Structure
+
+```
+{{ project_name }}/
+├── src/
+│   └── {{ package_name }}/     # Your package source code
+├── tests/                      # Test files
+├── docs/                       # Documentation
+├── .scripts/                   # Utility scripts
+│   ├── setup-template.sh       # Comprehensive setup script
+│   ├── post-install.sh         # UV post-install hook
+│   ├── replace-template-vars.sh # Template variable replacement
+│   └── setup-uv-project.sh     # UV project setup
+├── .github/                    # GitHub Actions and templates
+│   ├── workflows/              # CI/CD workflows
+│   ├── ISSUE_TEMPLATE/         # Issue templates
+│   └── PULL_REQUEST_TEMPLATE.md
+├── pyproject.toml             # Project configuration
+├── README.md                  # Project documentation
+└── .gitignore                 # Git ignore rules
+```
+
+## 🛠️ Development
+
+### Available Commands
+
+```bash
+# Install dependencies
+uv sync
+
+# Run tests
+uv run pytest
+
+# Run linting
+uv run pre-commit run --all-files
+
+# Format code
+uv run black .
+uv run isort .
+
+# Type checking
+uv run mypy src/
+
+# Build package
+uv run build
+```
+
+### Pre-commit Hooks
+
+This template includes pre-commit hooks for:
+
+- **Black** - Code formatting
+- **isort** - Import sorting
+- **flake8** - Linting
+- **mypy** - Type checking
+- **pytest** - Test running
+
+## 🤖 GitHub Actions
+
+### Automated Workflows
+
+1. **CI/CD Pipeline** - Runs on every push and PR
+   - Linting and formatting checks
+   - Type checking
+   - Test execution
+   - Coverage reporting
+
+2. **Release Automation** - Automated releases on version tags
+   - Version bumping
+   - Release notes generation
+   - Package publishing
+
+3. **Issue Management** - Automated labeling and triaging
+   - Issue categorization
+   - PR labeling
+   - Release note drafting
+
+## 📝 Issue Templates
+
+### Available Templates
+
+- **🐛 Bug Report** - For reporting bugs and issues
+- **✨ Feature Request** - For requesting new features
+- **📝 General Issue** - For questions and discussions
+
+### Using Templates
+
+1. Go to the Issues tab
+2. Click "New Issue"
+3. Select the appropriate template
+4. Fill in the required information
+5. Submit the issue
+
+## 🔄 Pull Request Process
+
+1. **Create a feature branch** from `main`
+2. **Make your changes** following the coding standards
+3. **Run tests locally** to ensure everything works
+4. **Submit a PR** using the provided template
+5. **Wait for CI checks** to pass
+6. **Get code review** from maintainers
+7. **Merge when approved**
+
+## 📚 Documentation
+
+- **[UV Template Guide](docs/uv-template-guide.md)** - Comprehensive setup and usage guide
+- **[Auto-labeling Guide](docs/auto-labeling.md)** - Understanding automated labeling
+- **[Troubleshooting](docs/troubleshooting.md)** - Common issues and solutions
+
+## 🔧 Configuration
+
+### Project Settings
+
+Update the following files with your project details:
+
+- `pyproject.toml` - Project metadata and dependencies
+- `README.md` - Project description and documentation
+- `.github/` - GitHub-specific configurations
+
+### Customization
+
+- **Add dependencies** in `pyproject.toml`
+- **Modify workflows** in `.github/workflows/`
+- **Update templates** in `.github/ISSUE_TEMPLATE/`
+- **Customize scripts** in `.scripts/`
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests if applicable
+5. Ensure all checks pass
+6. Submit a pull request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🆘 Support
+
+- **Documentation** - Check the [docs/](docs/) directory
+- **Issues** - Use the 🐛 Bug Report template
+- **Discussions** - Use the 📝 General Issue template
+
+## 🙏 Acknowledgments
+
+- [UV](https://github.com/astral-sh/uv) - Fast Python package installer and resolver
+- [GitHub Actions](https://github.com/features/actions) - CI/CD automation
+- [Pre-commit](https://pre-commit.com/) - Git hooks framework
+- [Hatch](https://hatch.pypa.io/) - Modern Python project manager
+
+---
+
+**Happy coding! 🎉**
