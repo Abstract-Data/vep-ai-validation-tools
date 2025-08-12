@@ -1,0 +1,213 @@
+# Auto-Labeler Configuration
+# This file configures automatic labeling of PRs based on file paths and content
+
+# Documentation changes
+documentation:
+  - "**/*.md"
+  - "**/*.rst"
+  - "**/*.txt"
+  - "docs/**/*"
+  - "README*"
+  - "CHANGELOG*"
+  - "LICENSE*"
+  - "SECURITY*"
+
+# Python code changes
+python:
+  - "**/*.py"
+  - "**/*.pyi"
+  - "**/*.pyx"
+  - "**/*.pxd"
+
+# Configuration files
+config:
+  - "**/*.toml"
+  - "**/*.yaml"
+  - "**/*.yml"
+  - "**/*.json"
+  - "**/*.ini"
+  - "**/*.cfg"
+  - "**/*.conf"
+  - "pyproject.toml"
+  - ".pre-commit-config.yaml"
+  - ".gitignore"
+
+# GitHub Actions workflows
+ci:
+  - ".github/workflows/**/*"
+  - ".github/actions/**/*"
+
+# Dependencies and package management
+dependencies:
+  - "pyproject.toml"
+  - "requirements*.txt"
+  - "Pipfile*"
+  - "poetry.lock"
+  - "uv.lock"
+  - "setup.py"
+  - "setup.cfg"
+
+# Testing files
+testing:
+  - ".tests/**/*"
+  - "test_*.py"
+  - "*_test.py"
+  - "**/*test*.py"
+  - ".coveragerc"
+  - "pytest.ini"
+  - "tox.ini"
+
+# Security-related files
+security:
+  - "SECURITY*"
+  - "**/security/**/*"
+  - "**/*security*.py"
+  - ".github/workflows/cleanup-ignored-files.yml"
+
+# Framework-specific files (optional - customize for your project)
+framework:
+  - "**/framework*/**/*"
+  - "**/*framework*.py"
+  - "**/*framework*.json"
+
+# Server and API files
+server:
+  - "**/server*.py"
+  - "**/api*.py"
+  - "**/app*.py"
+  - "**/main*.py"
+
+# Tools and utilities
+tools:
+  - "**/tools/**/*"
+  - "**/utils/**/*"
+  - "**/utilities/**/*"
+  - ".scripts/**/*"
+
+# Data and models
+data:
+  - "**/data/**/*"
+  - "**/models/**/*"
+  - "**/*.csv"
+  - "**/*.json"
+  - "**/*.xml"
+  - "**/*.yaml"
+  - "**/*.yml"
+
+# Web scraping and browser automation
+web-scraping:
+  - "**/scraping/**/*"
+  - "**/browser/**/*"
+  - "**/*scrap*.py"
+  - "**/*browser*.py"
+  - "**/*playwright*.py"
+  - "**/*selenium*.py"
+
+# File management and search
+file-management:
+  - "**/file*manager*.py"
+  - "**/search*.py"
+  - "**/file*.py"
+  - "**/directory*.py"
+
+# AI and machine learning
+ai-ml:
+  - "**/ai*/**/*"
+  - "**/ml*/**/*"
+  - "**/knowledge*base*.py"
+  - "**/kb*.py"
+  - "**/embedding*.py"
+  - "**/*ai*.py"
+  - "**/*ml*.py"
+
+# Screenshots and media
+media:
+  - "**/screenshot*.py"
+  - "**/image*.py"
+  - "**/*.png"
+  - "**/*.jpg"
+  - "**/*.jpeg"
+  - "**/*.gif"
+  - "**/*.pdf"
+
+# Database and storage
+database:
+  - "**/db*.py"
+  - "**/database*.py"
+  - "**/storage*.py"
+  - "**/*.db"
+  - "**/*.sqlite"
+  - "**/*.sql"
+
+# Logging and monitoring
+logging:
+  - "**/log*.py"
+  - "**/monitor*.py"
+  - "**/logging*.py"
+  - "logfire/**/*"
+
+# Error handling and diagnostics
+error-handling:
+  - "**/error*.py"
+  - "**/exception*.py"
+  - "**/diagnostic*.py"
+  - "**/debug*.py"
+
+# Performance and optimization
+performance:
+  - "**/performance*.py"
+  - "**/optimize*.py"
+  - "**/cache*.py"
+  - "**/async*.py"
+
+# Breaking changes (based on content)
+breaking:
+  - "**/*breaking*.py"
+  - "**/*major*.py"
+  - "**/migration*.py"
+
+# Bug fixes (based on content patterns)
+bug:
+  - "**/*fix*.py"
+  - "**/*bug*.py"
+  - "**/*patch*.py"
+
+# New features (based on content patterns)
+feature:
+  - "**/*feature*.py"
+  - "**/*new*.py"
+  - "**/*add*.py"
+  - "**/*implement*.py"
+
+# Refactoring (based on content patterns)
+refactor:
+  - "**/*refactor*.py"
+  - "**/*cleanup*.py"
+  - "**/*restructure*.py"
+
+# Documentation updates (based on content)
+docs:
+  - "**/*doc*.py"
+  - "**/*comment*.py"
+  - "**/*README*"
+  - "**/*CHANGELOG*"
+
+# Testing updates (based on content)
+test:
+  - "**/*test*.py"
+  - "**/*spec*.py"
+  - "**/*mock*.py"
+  - "**/*fixture*.py"
+
+# Security updates (based on content)
+security-update:
+  - "**/*security*.py"
+  - "**/*auth*.py"
+  - "**/*encrypt*.py"
+  - "**/*hash*.py"
+
+# Dependencies update (based on content)
+deps:
+  - "**/*dependenc*.py"
+  - "**/*requirement*.py"
+  - "**/*package*.py"

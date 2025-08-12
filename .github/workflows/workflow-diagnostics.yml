@@ -1,0 +1,257 @@
+name: Workflow Diagnostics & Issue Creation
+
+on:
+  workflow_run:
+    workflows: ["*"] # Triggers on any workflow
+    types: [completed]
+    branches: [main, master]
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+  checks: write
+
+jobs:
+  diagnose-failure:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_branch }}
+
+      - name: Get workflow run details
+        id: workflow-info
+        run: |
+          echo "workflow_name=${{ github.event.workflow_run.name }}" >> $GITHUB_OUTPUT
+          echo "workflow_id=${{ github.event.workflow_run.id }}" >> $GITHUB_OUTPUT
+          echo "run_url=${{ github.event.workflow_run.html_url }}" >> $GITHUB_OUTPUT
+          echo "commit_sha=${{ github.event.workflow_run.head_sha }}" >> $GITHUB_OUTPUT
+          echo "branch=${{ github.event.workflow_run.head_branch }}" >> $GITHUB_OUTPUT
+          echo "triggered_by=${{ github.event.workflow_run.actor.login }}" >> $GITHUB_OUTPUT
+
+      - name: Collect system diagnostics
+        id: diagnostics
+        run: |
+          echo "=== System Diagnostics ===" > diagnostics.txt
+          echo "Date: $(date)" >> diagnostics.txt
+          echo "GitHub Runner: $RUNNER_OS $RUNNER_ARCH" >> diagnostics.txt
+          echo "Python Version: $(python3 --version 2>/dev/null || echo 'Python not found')" >> diagnostics.txt
+          echo "Node Version: $(node --version 2>/dev/null || echo 'Node not found')" >> diagnostics.txt
+          echo "Git Version: $(git --version)" >> diagnostics.txt
+          echo "" >> diagnostics.txt
+
+          echo "=== Repository Status ===" >> diagnostics.txt
+          echo "Branch: $(git branch --show-current)" >> diagnostics.txt
+          echo "Last Commit: $(git log -1 --oneline)" >> diagnostics.txt
+          echo "Working Directory: $(pwd)" >> diagnostics.txt
+          echo "Files in root: $(ls -la | head -10)" >> diagnostics.txt
+          echo "" >> diagnostics.txt
+
+          echo "=== Python Environment ===" >> diagnostics.txt
+          if [ -f "pyproject.toml" ]; then
+            echo "pyproject.toml exists" >> diagnostics.txt
+            echo "Project name: $(grep '^name =' pyproject.toml | cut -d'"' -f2 2>/dev/null || echo 'Not found')" >> diagnostics.txt
+          else
+            echo "pyproject.toml not found" >> diagnostics.txt
+          fi
+
+          if [ -f "requirements.txt" ]; then
+            echo "requirements.txt exists" >> diagnostics.txt
+          else
+            echo "requirements.txt not found" >> diagnostics.txt
+          fi
+
+          if [ -d ".venv" ]; then
+            echo ".venv directory exists" >> diagnostics.txt
+          else
+            echo ".venv directory not found" >> diagnostics.txt
+          fi
+          echo "" >> diagnostics.txt
+
+          echo "=== UV Status ===" >> diagnostics.txt
+          if command -v uv &> /dev/null; then
+            echo "UV is installed: $(uv --version)" >> diagnostics.txt
+            if [ -f "uv.lock" ]; then
+              echo "uv.lock exists" >> diagnostics.txt
+            else
+              echo "uv.lock not found" >> diagnostics.txt
+            fi
+          else
+            echo "UV not installed" >> diagnostics.txt
+          fi
+          echo "" >> diagnostics.txt
+
+          echo "=== Git Status ===" >> diagnostics.txt
+          echo "Git status:" >> diagnostics.txt
+          git status --porcelain >> diagnostics.txt 2>&1 || echo "Git status failed" >> diagnostics.txt
+          echo "" >> diagnostics.txt
+
+          echo "=== Recent Commits ===" >> diagnostics.txt
+          git log --oneline -5 >> diagnostics.txt 2>&1 || echo "Git log failed" >> diagnostics.txt
+          echo "" >> diagnostics.txt
+
+          # Store diagnostics for later use
+          cat diagnostics.txt
+          echo "diagnostics<<EOF" >> $GITHUB_OUTPUT
+          cat diagnostics.txt >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Analyze workflow logs
+        id: log-analysis
+        run: |
+          echo "=== Workflow Log Analysis ===" > log_analysis.txt
+
+          # Get the failed workflow run logs
+          WORKFLOW_ID="${{ github.event.workflow_run.id }}"
+          echo "Analyzing workflow run: $WORKFLOW_ID" >> log_analysis.txt
+          echo "Workflow URL: ${{ github.event.workflow_run.html_url }}" >> log_analysis.txt
+          echo "" >> log_analysis.txt
+
+          # Common failure patterns and their solutions
+          echo "=== Common Failure Patterns ===" >> log_analysis.txt
+          echo "1. Python/UV Issues:" >> log_analysis.txt
+          echo "   - Missing dependencies" >> log_analysis.txt
+          echo "   - Version conflicts" >> log_analysis.txt
+          echo "   - Environment setup problems" >> log_analysis.txt
+          echo "" >> log_analysis.txt
+          echo "2. Git Issues:" >> log_analysis.txt
+          echo "   - Merge conflicts" >> log_analysis.txt
+          echo "   - Permission problems" >> log_analysis.txt
+          echo "   - Branch issues" >> log_analysis.txt
+          echo "" >> log_analysis.txt
+          echo "3. GitHub Actions Issues:" >> log_analysis.txt
+          echo "   - Workflow syntax errors" >> log_analysis.txt
+          echo "   - Missing secrets" >> log_analysis.txt
+          echo "   - Runner problems" >> log_analysis.txt
+          echo "" >> log_analysis.txt
+
+          # Store analysis for later use
+          cat log_analysis.txt
+          echo "log_analysis<<EOF" >> $GITHUB_OUTPUT
+          cat log_analysis.txt >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Generate Copilot-ready issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const workflowName = '${{ steps.workflow-info.outputs.workflow_name }}';
+            const workflowId = '${{ steps.workflow-info.outputs.workflow_id }}';
+            const runUrl = '${{ steps.workflow-info.outputs.run_url }}';
+            const commitSha = '${{ steps.workflow-info.outputs.commit_sha }}';
+            const branch = '${{ steps.workflow-info.outputs.branch }}';
+            const triggeredBy = '${{ steps.workflow-info.outputs.triggered_by }}';
+            const diagnostics = `${{ steps.diagnostics.outputs.diagnostics }}`;
+            const logAnalysis = `${{ steps.log-analysis.outputs.log_analysis }}`;
+
+            // Check if an issue already exists for this workflow failure
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: ['workflow-failure', 'copilot-fix']
+            });
+
+            const existingIssue = issues.find(issue =>
+              issue.title.includes(`Workflow Failure: ${workflowName}`) &&
+              issue.body.includes(`Workflow ID: ${workflowId}`)
+            );
+
+            if (!existingIssue) {
+              const issueBody = `## 🚨 Workflow Failure - Copilot Fix Required
+
+              **Workflow:** ${workflowName}
+              **Workflow ID:** ${workflowId}
+              **Run URL:** ${runUrl}
+              **Branch:** ${branch}
+              **Commit:** ${commitSha}
+              **Triggered by:** ${triggeredBy}
+              **Failure Time:** ${new Date().toISOString()}
+
+              ### 🚨 Issue Summary
+              The workflow \`${workflowName}\` failed and requires investigation and fixing.
+
+              ### 📋 Diagnostic Information
+
+              #### System Diagnostics:
+              \`\`\`
+              ${diagnostics}
+              \`\`\`
+
+              #### Log Analysis:
+              \`\`\`
+              ${logAnalysis}
+              \`\`\`
+
+              ### 🤖 Copilot Instructions
+
+              Please analyze this workflow failure and provide a solution. Consider:
+
+              1. **Root Cause Analysis**: What caused the failure?
+              2. **Dependencies**: Are there missing or conflicting dependencies?
+              3. **Configuration**: Are there configuration issues?
+              4. **Environment**: Are there environment-specific problems?
+              5. **Code Issues**: Are there syntax or logic errors?
+
+              ### 🔧 Suggested Actions for Copilot:
+
+              1. **Review the diagnostic information above**
+              2. **Check the workflow logs at:** ${runUrl}
+              3. **Identify the specific failure point**
+              4. **Propose a fix with code changes**
+              5. **Test the solution locally if possible**
+              6. **Provide step-by-step resolution steps**
+
+              ### 📝 Expected Output from Copilot:
+
+              - [ ] Root cause identified
+              - [ ] Specific fix proposed
+              - [ ] Code changes provided
+              - [ ] Testing instructions included
+              - [ ] Prevention measures suggested
+
+              ### 🔗 Related Links:
+              - [Workflow Run](${runUrl})
+              - [Repository](https://github.com/${context.repo.owner}/${context.repo.repo})
+              - [Actions Tab](https://github.com/${context.repo.owner}/${context.repo.repo}/actions)
+
+              ---
+              *This issue was automatically created by the Workflow Diagnostics workflow.*
+              *Assign to Copilot for automated fixing.*`;
+
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `🔧 Workflow Failure: ${workflowName} - Copilot Fix Required`,
+                body: issueBody,
+                labels: ['workflow-failure', 'copilot-fix', 'automated', 'high-priority'],
+                assignees: ['${{ github.repository_owner }}']
+              });
+
+              console.log(`✅ Created issue for workflow failure: ${workflowName}`);
+            } else {
+              console.log(`ℹ️ Issue already exists for workflow failure: ${workflowName}`);
+            }
+
+      - name: Create failure summary
+        if: always()
+        run: |
+          echo "## Workflow Failure Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Workflow:** ${{ steps.workflow-info.outputs.workflow_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Status:** ❌ Failed" >> $GITHUB_STEP_SUMMARY
+          echo "**Run URL:** ${{ steps.workflow-info.outputs.run_url }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Actions Taken:" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Collected system diagnostics" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Analyzed workflow logs" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Created Copilot-ready issue ticket" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Next Steps:" >> $GITHUB_STEP_SUMMARY
+          echo "1. Review the created issue ticket" >> $GITHUB_STEP_SUMMARY
+          echo "2. Assign the issue to Copilot for automated fixing" >> $GITHUB_STEP_SUMMARY
+          echo "3. Monitor the fix implementation" >> $GITHUB_STEP_SUMMARY

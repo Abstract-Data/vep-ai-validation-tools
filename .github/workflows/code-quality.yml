@@ -1,0 +1,164 @@
+name: Code Quality
+
+on:
+  push:
+    branches: [main, master, develop]
+  pull_request:
+    branches: [main, master]
+  schedule:
+    # Run weekly on Mondays at 3 AM UTC
+    - cron: "0 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+
+jobs:
+  code-quality:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+
+      - name: Install UV
+        uses: astral-sh/setup-uv@v2
+        with:
+          version: "latest"
+
+      - name: Cache UV dependencies
+        uses: actions/cache@v4
+        with:
+          path: .uv
+          key: ${{ runner.os }}-uv-${{ hashFiles('**/pyproject.toml') }}
+          restore-keys: |
+            ${{ runner.os }}-uv-
+
+      - name: Install dependencies
+        run: uv sync --extra dev
+
+      - name: Run code complexity analysis
+        run: |
+          echo "📊 Code Complexity Analysis"
+          uv run radon cc src/ -a -nc
+
+          echo "📈 Maintainability Index"
+          uv run radon mi src/
+
+          echo "📏 Halstead Complexity"
+          uv run radon hal src/
+
+      - name: Run cyclomatic complexity check
+        run: |
+          echo "🔄 Cyclomatic Complexity Check"
+          uv run xenon src/ --max-absolute A --max-modules A --max-average A
+
+      - name: Run dead code detection
+        run: |
+          echo "🧟 Dead Code Detection"
+          uv run vulture src/ .tests/ --min-confidence 80
+
+      - name: Generate code metrics report
+        run: |
+          echo "📋 Code Metrics Summary" > code-metrics.txt
+          echo "========================" >> code-metrics.txt
+          echo "" >> code-metrics.txt
+
+          echo "Lines of Code:" >> code-metrics.txt
+          find src/ -name "*.py" -exec wc -l {} + | tail -1 >> code-metrics.txt
+          echo "" >> code-metrics.txt
+
+          echo "Test Coverage:" >> code-metrics.txt
+          uv run pytest --cov=src --cov-report=term-missing | grep "TOTAL" >> code-metrics.txt
+          echo "" >> code-metrics.txt
+
+          echo "Code Quality Score:" >> code-metrics.txt
+          uv run radon mi src/ | tail -1 >> code-metrics.txt
+
+      - name: Upload code metrics
+        uses: actions/upload-artifact@v4
+        with:
+          name: code-metrics
+          path: code-metrics.txt
+
+  dependency-updates:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+
+      - name: Install UV
+        uses: astral-sh/setup-uv@v2
+        with:
+          version: "latest"
+
+      - name: Cache UV dependencies
+        uses: actions/cache@v4
+        with:
+          path: .uv
+          key: ${{ runner.os }}-uv-${{ hashFiles('**/pyproject.toml') }}
+          restore-keys: |
+            ${{ runner.os }}-uv-
+
+      - name: Install dependencies
+        run: uv sync --extra dev
+
+      - name: Check for outdated dependencies
+        id: check-deps
+        run: |
+          echo "🔍 Checking for outdated dependencies..."
+
+          # First, try to update the lockfile if needed
+          if ! uv lock --check; then
+            echo "⚠️ Lockfile needs updating, updating now..."
+            uv lock
+          fi
+
+          echo "📦 Checking for available updates..."
+          if uv lock --upgrade --dry-run 2>&1 | grep -q "would update"; then
+            echo "Updates available"
+            echo "has_updates=true" >> $GITHUB_OUTPUT
+          else
+            echo "No updates available"
+            echo "has_updates=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create dependency update issue
+        if: steps.check-deps.outputs.has_updates == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: '🔧 Dependency Updates Available',
+              body: `## Dependency Updates Needed
+
+            This issue was automatically created because outdated dependencies were detected.
+
+            **Repository:** ${context.repo.owner}/${context.repo.repo}
+            **Branch:** ${context.ref}
+            **Commit:** ${context.sha}
+
+            Please review and update dependencies as needed.
+
+            ### Next Steps:
+            1. Run \`uv lock --upgrade\` to update dependencies
+            2. Test the changes thoroughly
+            3. Update this issue with the results
+            4. Close this issue when resolved`,
+              labels: ['dependencies', 'maintenance']
+            });
+
+            console.log(`Created issue #${issue.data.number}`);

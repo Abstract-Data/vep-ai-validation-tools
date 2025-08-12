@@ -1,0 +1,58 @@
+name: Auto-Label PRs
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, labeled, unlabeled]
+
+jobs:
+  auto-label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Auto-Label PR
+        uses: actions/labeler@v5
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          sync-labels: true
+
+      - name: Create Label Summary
+        if: always()
+        run: |
+          echo "## 🏷️ Auto-Label Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**PR:** #${{ github.event.pull_request.number }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Title:** ${{ github.event.pull_request.title }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Author:** @${{ github.event.pull_request.user.login }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Actions Taken:" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Analyzed changed files" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Applied automatic labels" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Synchronized labels" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Available Labels:" >> $GITHUB_STEP_SUMMARY
+          echo "- 🐍 **python** - Python code changes" >> $GITHUB_STEP_SUMMARY
+          echo "- 📚 **documentation** - Documentation updates" >> $GITHUB_STEP_SUMMARY
+          echo "- ⚙️ **config** - Configuration files" >> $GITHUB_STEP_SUMMARY
+          echo "- 🔧 **ci** - GitHub Actions workflows" >> $GITHUB_STEP_SUMMARY
+          echo "- 📦 **dependencies** - Package dependencies" >> $GITHUB_STEP_SUMMARY
+          echo "- 🧪 **testing** - Test files and updates" >> $GITHUB_STEP_SUMMARY
+          echo "- 🔒 **security** - Security-related changes" >> $GITHUB_STEP_SUMMARY
+          echo "- 🖥️ **server** - Server and API files" >> $GITHUB_STEP_SUMMARY
+          echo "- 🛠️ **tools** - Tools and utilities" >> $GITHUB_STEP_SUMMARY
+          echo "- 📊 **data** - Data and models" >> $GITHUB_STEP_SUMMARY
+          echo "- 🌐 **web-scraping** - Web scraping and browser automation" >> $GITHUB_STEP_SUMMARY
+          echo "- 📁 **file-management** - File management and search" >> $GITHUB_STEP_SUMMARY
+          echo "- 🧠 **ai-ml** - AI and machine learning" >> $GITHUB_STEP_SUMMARY
+          echo "- 🖼️ **media** - Screenshots and media files" >> $GITHUB_STEP_SUMMARY
+          echo "- 🗄️ **database** - Database and storage" >> $GITHUB_STEP_SUMMARY
+          echo "- 📝 **logging** - Logging and monitoring" >> $GITHUB_STEP_SUMMARY
+          echo "- ⚠️ **error-handling** - Error handling and diagnostics" >> $GITHUB_STEP_SUMMARY
+          echo "- ⚡ **performance** - Performance and optimization" >> $GITHUB_STEP_SUMMARY
+          echo "- 💥 **breaking** - Breaking changes" >> $GITHUB_STEP_SUMMARY
+          echo "- 🐛 **bug** - Bug fixes" >> $GITHUB_STEP_SUMMARY
+          echo "- ✨ **feature** - New features" >> $GITHUB_STEP_SUMMARY
+          echo "- 🔄 **refactor** - Code refactoring" >> $GITHUB_STEP_SUMMARY

@@ -1,0 +1,5 @@
+Troubleshooting
+==============
+
+.. include:: ../../docs/troubleshooting.md
+   :parser: myst_parser.sphinx_
