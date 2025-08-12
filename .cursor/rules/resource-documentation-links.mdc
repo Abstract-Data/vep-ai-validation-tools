@@ -1,0 +1,8 @@
+---
+alwaysApply: false
+---
+Use the documentation for reference as needed:
+
+**PydanticAI**: https://ai.pydantic.dev/
+**PydanticAI Graphing**: https://ai.pydantic.dev/graph/
+**Pydantic Validation Models**: https://docs.pydantic.dev/latest/

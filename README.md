@@ -4,6 +4,7 @@ A Python package built with UV
 
 <!-- AUTO_GENERATED_CONTENT_START -->
 <!-- Auto-generated content sections -->
+
 ## ✨ Features
 
 - **📦 Modern Python Package** - Built with pyproject.toml and UV
@@ -42,13 +43,13 @@ import vep_ai_validation_tools
 # Your usage examples here
 ```
 
-
 ### 📁 Package Structure
 
 ```
 ├── src/vep_ai_validation_tools/__init__.py
 ├── src/vep_ai_validation_tools/core.py
 ```
+
 <!-- AUTO_GENERATED_CONTENT_END -->
 
 ## 📁 Project Structure

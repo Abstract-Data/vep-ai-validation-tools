@@ -268,7 +268,7 @@ if [[ "$auto_generate" =~ ^[Yy]$ ]]; then
         print_status "Running README auto-generation..."
         chmod +x .scripts/auto-generate-readme.sh
         ./.scripts/auto-generate-readme.sh --preview
-        
+
         echo ""
         read -p "Would you like to integrate this generated content into your README.md? (y/N): " integrate
         if [[ "$integrate" =~ ^[Yy]$ ]]; then
@@ -276,7 +276,7 @@ if [[ "$auto_generate" =~ ^[Yy]$ ]]; then
             if [ -f "/tmp/auto-generated-readme-content.md" ]; then
                 # Create a backup of the current README
                 cp README.md README.md.backup
-                
+
                 # Replace content between AUTO_GENERATED_CONTENT markers
                 awk '
                     /<!-- AUTO_GENERATED_CONTENT_START -->/ {
@@ -292,7 +292,7 @@ if [[ "$auto_generate" =~ ^[Yy]$ ]]; then
                     }
                     {print}
                 ' README.md.backup > README.md
-                
+
                 print_success "✅ Auto-generated content integrated into README.md"
                 print_status "Original README backed up to README.md.backup"
             fi

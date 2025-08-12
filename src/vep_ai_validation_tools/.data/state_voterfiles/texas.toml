@@ -1,0 +1,37 @@
+voter_vuid = "VUID"
+voter_registration_date = "EDR"
+voter_registration_status = "STATUS"
+voter_precinct_number = "PCT"
+voter_precinct_name = "PCTNAME"
+voter_county = 'COUNTY'
+
+person_name_last = "LNAME"
+person_name_first = "FNAME"
+person_name_middle = "MNAME"
+person_name_suffix = "SFX"
+person_dob = "DOB"
+person_gender = "SEX"
+
+residence_part_number = "RHNUM"
+residence_part_number_suffix = "RDESIG"
+residence_part_street_name = "RSTNAME"
+residence_part_street_type = "RSTTYPE"
+residence_part_street_post_type = ["RSTSFX"]
+residence_part_unit_number = "RUNUM"
+residence_part_unit_type = "RUTYPE"
+residence_part_city = "RCITY"
+residence_part_state = "RSTATE"
+residence_part_zip5 = "RZIP"
+
+mail_address1 = "MADR1"
+mail_address2 = "MADR2"
+mail_city = "MCITY"
+mail_state = "MST"
+mail_zip5 = "MZIP"
+
+district_state_legislative_lower = "NEWHD"
+district_state_legislative_upper = "NEWSD"
+
+district_federal_congressional = "NEWCD"
+
+file_origin = "FILE_ORIGIN"

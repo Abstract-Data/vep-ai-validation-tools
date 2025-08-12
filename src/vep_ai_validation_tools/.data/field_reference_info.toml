@@ -1,0 +1,559 @@
+[contact_phone_unknown1]
+field_name = "contact_phone_unknown1"
+description = "DESCRIPTION NEEDED FORcontact_phone_unknown1"
+possible_values = [ "PHONE_NO", "PHONENUMBER",]
+
+[district_city_council_district]
+field_name = "district_city_council_district"
+description = "DESCRIPTION NEEDED FORdistrict_city_council_district"
+possible_values = [ "DIST19",]
+
+[district_city_incorporation]
+field_name = "district_city_incorporation"
+description = "DESCRIPTION NEEDED FORdistrict_city_incorporation"
+possible_values = [ "INCORPORATION",]
+
+[district_city_limits]
+field_name = "district_city_limits"
+description = "DESCRIPTION NEEDED FORdistrict_city_limits"
+possible_values = [ "CITY_LIMITS",]
+
+[district_city_municipality]
+field_name = "district_city_municipality"
+description = "DESCRIPTION NEEDED FORdistrict_city_municipality"
+possible_values = [ "MUNICIPALITY", "DIST05",]
+
+[district_city_name]
+field_name = "district_city_name"
+description = "DESCRIPTION NEEDED FORdistrict_city_name"
+possible_values = [ "CITY",]
+
+[district_city_school_district]
+field_name = "district_city_school_district"
+description = "DESCRIPTION NEEDED FORdistrict_city_school_district"
+possible_values = [ "CITY_SCHOOL_DISTRICT",]
+
+[district_county_career_center]
+field_name = "district_county_career_center"
+description = "DESCRIPTION NEEDED FORdistrict_county_career_center"
+possible_values = [ "CAREER_CENTER",]
+
+[district_county_commissioner_precinct]
+field_name = "district_county_commissioner_precinct"
+description = "DESCRIPTION NEEDED FORdistrict_county_commissioner_precinct"
+possible_values = [ "DIST04",]
+
+[district_county_community_college]
+field_name = "district_county_community_college"
+description = "DESCRIPTION NEEDED FORdistrict_county_community_college"
+possible_values = [ "DIST18",]
+
+[district_county_constable_precinct]
+field_name = "district_county_constable_precinct"
+description = "DESCRIPTION NEEDED FORdistrict_county_constable_precinct"
+possible_values = [ "DIST06",]
+
+[district_county_district_attorney]
+field_name = "district_county_district_attorney"
+description = "DESCRIPTION NEEDED FORdistrict_county_district_attorney"
+possible_values = [ "DISTRICT ATTORNEY",]
+
+[district_county_education_service_center]
+field_name = "district_county_education_service_center"
+description = "DESCRIPTION NEEDED FORdistrict_county_education_service_center"
+possible_values = [ "EDU_SERVICE_CENTER_DISTRICT",]
+
+[district_county_exempted_village_school_district]
+field_name = "district_county_exempted_village_school_district"
+description = "DESCRIPTION NEEDED FORdistrict_county_exempted_village_school_district"
+possible_values = [ "EXEMPTED_VILL_SCHOOL_DISTRICT",]
+
+[district_county_first_class_school]
+field_name = "district_county_first_class_school"
+description = "DESCRIPTION NEEDED FORdistrict_county_first_class_school"
+possible_values = [ "FIRST CLASS SCHOOL",]
+
+[district_county_id]
+field_name = "district_county_id"
+description = "DESCRIPTION NEEDED FORdistrict_county_id"
+possible_values = [ "COUNTY_ID",]
+
+[district_county_library_district]
+field_name = "district_county_library_district"
+description = "DESCRIPTION NEEDED FORdistrict_county_library_district"
+possible_values = [ "LIBRARY",]
+
+[district_county_local_school_district]
+field_name = "district_county_local_school_district"
+description = "DESCRIPTION NEEDED FORdistrict_county_local_school_district"
+possible_values = [ "LOCAL_SCHOOL_DISTRICT",]
+
+[district_county_mass_transit_authority]
+field_name = "district_county_mass_transit_authority"
+description = "DESCRIPTION NEEDED FORdistrict_county_mass_transit_authority"
+possible_values = [ "DIST12",]
+
+[district_county_name]
+field_name = "district_county_name"
+description = "DESCRIPTION NEEDED FORdistrict_county_name"
+possible_values = [ "COUNTY",]
+
+[district_county_number]
+field_name = "district_county_number"
+description = "DESCRIPTION NEEDED FORdistrict_county_number"
+possible_values = [ "COUNTY_NUMBER", "CURRENT_COUNTY",]
+
+[district_county_representational_school]
+field_name = "district_county_representational_school"
+description = "DESCRIPTION NEEDED FORdistrict_county_representational_school"
+possible_values = [ "REPRESENTATIONAL SCHOOL",]
+
+[district_county_sanitary]
+field_name = "district_county_sanitary"
+description = "DESCRIPTION NEEDED FORdistrict_county_sanitary"
+possible_values = [ "SANITARY",]
+
+[district_county_school]
+field_name = "district_county_school"
+description = "DESCRIPTION NEEDED FORdistrict_county_school"
+possible_values = [ "SCHOOL",]
+
+[district_county_school_district]
+field_name = "district_county_school_district"
+description = "DESCRIPTION NEEDED FORdistrict_county_school_district"
+possible_values = [ "DIST07",]
+
+[district_county_sub_school_district]
+field_name = "district_county_sub_school_district"
+description = "DESCRIPTION NEEDED FORdistrict_county_sub_school_district"
+possible_values = [ "DIST08",]
+
+[district_county_supervisory]
+field_name = "district_county_supervisory"
+description = "DESCRIPTION NEEDED FORdistrict_county_supervisory"
+possible_values = [ "COUNTY SUPERVISORY",]
+
+[district_county_technical_college]
+field_name = "district_county_technical_college"
+description = "DESCRIPTION NEEDED FORdistrict_county_technical_college"
+possible_values = [ "TECHNICAL COLLEGE",]
+
+[district_county_township]
+field_name = "district_county_township"
+description = "DESCRIPTION NEEDED FORdistrict_county_township"
+possible_values = [ "TOWNSHIP",]
+
+[district_county_village]
+field_name = "district_county_village"
+description = "DESCRIPTION NEEDED FORdistrict_county_village"
+possible_values = [ "VILLAGE",]
+
+[district_county_ward]
+field_name = "district_county_ward"
+description = "DESCRIPTION NEEDED FORdistrict_county_ward"
+possible_values = [ "ward", "WARD",]
+
+[district_county_water_district_01]
+field_name = "district_county_water_district_01"
+description = "DESCRIPTION NEEDED FORdistrict_county_water_district_01"
+possible_values = [ "DIST11",]
+
+[district_county_water_district_02]
+field_name = "district_county_water_district_02"
+description = "DESCRIPTION NEEDED FORdistrict_county_water_district_02"
+possible_values = [ "DIST13",]
+
+[district_court_appeallate]
+field_name = "district_court_appeallate"
+description = "DESCRIPTION NEEDED FORdistrict_court_appeallate"
+possible_values = [ "COURT_OF_APPEALS",]
+
+[district_court_county]
+field_name = "district_court_county"
+description = "DESCRIPTION NEEDED FORdistrict_court_county"
+possible_values = [ "COUNTY_COURT_DISTRICT",]
+
+[district_court_municipal]
+field_name = "district_court_municipal"
+description = "DESCRIPTION NEEDED FORdistrict_court_municipal"
+possible_values = [ "MUNICIPAL_COURT_DISTRICT",]
+
+[district_federal_congressional]
+field_name = "district_federal_congressional"
+description = "DESCRIPTION NEEDED FORdistrict_federal_congressional"
+possible_values = [ "NEWCD", "DIST01", "CONGRESSIONAL", "CONGRESSIONAL_DISTRICT", "CONGRESS_DISTRICT",]
+
+[district_state]
+field_name = "district_state"
+description = "DESCRIPTION NEEDED FORdistrict_state"
+possible_values = [ "STATE",]
+
+[district_state_board_of_education]
+field_name = "district_state_board_of_education"
+description = "DESCRIPTION NEEDED FORdistrict_state_board_of_education"
+possible_values = [ "DIST16", "STATE_BOARD_OF_EDUCATION",]
+
+[district_state_circuit_court]
+field_name = "district_state_circuit_court"
+description = "DESCRIPTION NEEDED FORdistrict_state_circuit_court"
+possible_values = [ "CIRCUIT COURT",]
+
+[district_state_court_of_appeals]
+field_name = "district_state_court_of_appeals"
+description = "DESCRIPTION NEEDED FORdistrict_state_court_of_appeals"
+possible_values = [ "COURT OF APPEALS",]
+
+[district_state_district_combo]
+field_name = "district_state_district_combo"
+description = "DESCRIPTION NEEDED FORdistrict_state_district_combo"
+possible_values = [ "DISTRICTCOMBO",]
+
+[district_state_juristidction]
+field_name = "district_state_juristidction"
+description = "DESCRIPTION NEEDED FORdistrict_state_juristidction"
+possible_values = [ "JURISDICTION",]
+
+[district_state_legislative_lower]
+field_name = "district_state_legislative_lower"
+description = "DESCRIPTION NEEDED FORdistrict_state_legislative_lower"
+possible_values = [ "HOUSE_DISTRICT", "STATE_REPRESENTATIVE_DISTRICT", "DIST03", "NEWHD",]
+
+[district_state_legislative_upper]
+field_name = "district_state_legislative_upper"
+description = "DESCRIPTION NEEDED FORdistrict_state_legislative_upper"
+possible_values = [ "STATE_SENATE_DISTRICT", "DIST02", "SENATE_DISTRICT", "NEWSD",]
+
+[district_state_lower]
+field_name = "district_state_lower"
+description = "DESCRIPTION NEEDED FORdistrict_state_lower"
+possible_values = [ "STATE ASSEMBLY",]
+
+[district_state_multijurisdictional_judge]
+field_name = "district_state_multijurisdictional_judge"
+description = "DESCRIPTION NEEDED FORdistrict_state_multijurisdictional_judge"
+possible_values = [ "MULTI-JURISDICTIONAL JUDGE",]
+
+[district_state_upper]
+field_name = "district_state_upper"
+description = "DESCRIPTION NEEDED FORdistrict_state_upper"
+possible_values = [ "STATE SENATE",]
+
+[file_origin]
+field_name = "file_origin"
+description = "DESCRIPTION NEEDED FORfile_origin"
+possible_values = [ "FILE_ORIGIN",]
+
+[mail_address1]
+field_name = "mail_address1"
+description = "DESCRIPTION NEEDED FORmail_address1"
+possible_values = [ "MAILING_ADDRESS1", "MA_ADDR_LINE_1", "MLADD1", "MAILINGADDRESS1", "MADR1",]
+
+[mail_address2]
+field_name = "mail_address2"
+description = "DESCRIPTION NEEDED FORmail_address2"
+possible_values = [ "MAILINGADDRESS2", "MAILING_SECONDARY_ADDRESS", "MLADD2", "MADR2",]
+
+[mail_change_date]
+field_name = "mail_change_date"
+description = "DESCRIPTION NEEDED FORmail_change_date"
+possible_values = [ "MCHGDT",]
+
+[mail_city]
+field_name = "mail_city"
+description = "DESCRIPTION NEEDED FORmail_city"
+possible_values = [ "MAILING_CITY", "MAILINGCITYSTATEZIP", "MA_CITY", "MCITY", "MLCITY",]
+
+[mail_country]
+field_name = "mail_country"
+description = "DESCRIPTION NEEDED FORmail_country"
+possible_values = [ "MLCTRY", "MAILING_COUNTRY",]
+
+[mail_postal_code]
+field_name = "mail_postal_code"
+description = "DESCRIPTION NEEDED FORmail_postal_code"
+possible_values = [ "MAILING_POSTAL_CODE",]
+
+[mail_standardized]
+field_name = "mail_standardized"
+description = "DESCRIPTION NEEDED FORmail_standardized"
+possible_values = [ "MAILINGADDRESS",]
+
+[mail_state]
+field_name = "mail_state"
+description = "DESCRIPTION NEEDED FORmail_state"
+possible_values = [ "MST", "MLSTAT", "MA_STATE", "MAILING_STATE",]
+
+[mail_zip4]
+field_name = "mail_zip4"
+description = "DESCRIPTION NEEDED FORmail_zip4"
+possible_values = [ "MA_ZIP_PLUS", "MZIP+4", "MAILING_ZIP_PLUS4",]
+
+[mail_zip5]
+field_name = "mail_zip5"
+description = "DESCRIPTION NEEDED FORmail_zip5"
+possible_values = [ "MA_ZIP_CODE", "MZIP", "MLZIPCD", "MAILING_ZIP",]
+
+[person_dob]
+field_name = "person_dob"
+description = "DESCRIPTION NEEDED FORperson_dob"
+possible_values = [ "DATE_OF_BIRTH", "DOB",]
+
+[person_gender]
+field_name = "person_gender"
+description = "DESCRIPTION NEEDED FORperson_gender"
+possible_values = [ "GENDER", "SEX",]
+
+[person_name_first]
+field_name = "person_name_first"
+description = "DESCRIPTION NEEDED FORperson_name_first"
+possible_values = [ "FIRST_NAME", "FSTNAM", "FIRSTNAME", "FNAME",]
+
+[person_name_last]
+field_name = "person_name_last"
+description = "DESCRIPTION NEEDED FORperson_name_last"
+possible_values = [ "LSTNAM", "LAST_NAME", "LNAME", "LASTNAME",]
+
+[person_name_middle]
+field_name = "person_name_middle"
+description = "DESCRIPTION NEEDED FORperson_name_middle"
+possible_values = [ "MIDDLE_NAME", "MNAME", "MIDDLENAME", "MIDNAM",]
+
+[person_name_prefix]
+field_name = "person_name_prefix"
+description = "DESCRIPTION NEEDED FORperson_name_prefix"
+possible_values = [ "NAMPFX",]
+
+[person_name_suffix]
+field_name = "person_name_suffix"
+description = "DESCRIPTION NEEDED FORperson_name_suffix"
+possible_values = [ "SUFFIX", "SFX",]
+
+[residence_address1]
+field_name = "residence_address1"
+description = "DESCRIPTION NEEDED FORresidence_address1"
+possible_values = [ "RESIDENTIAL_ADDRESS1", "ADDRESS1",]
+
+[residence_address2]
+field_name = "residence_address2"
+description = "DESCRIPTION NEEDED FORresidence_address2"
+possible_values = [ "RESIDENTIAL_SECONDARY_ADDR", "ADDRESS2",]
+
+[residence_address_id]
+field_name = "residence_address_id"
+description = "DESCRIPTION NEEDED FORresidence_address_id"
+possible_values = [ "ADDRID",]
+
+[residence_city]
+field_name = "residence_city"
+description = "DESCRIPTION NEEDED FORresidence_city"
+possible_values = [ "RESIDENTIAL_CITY", "ADDRESSCITY",]
+
+[residence_country]
+field_name = "residence_country"
+description = "DESCRIPTION NEEDED FORresidence_country"
+possible_values = [ "RESIDENTIAL_COUNTRY",]
+
+[residence_effective_date]
+field_name = "residence_effective_date"
+description = "DESCRIPTION NEEDED FORresidence_effective_date"
+possible_values = [ "REFDAT",]
+
+[residence_part_city]
+field_name = "residence_part_city"
+description = "DESCRIPTION NEEDED FORresidence_part_city"
+possible_values = [ "RCITY", "RA_CITY", "RSCITY",]
+
+[residence_part_house_direction]
+field_name = "residence_part_house_direction"
+description = "DESCRIPTION NEEDED FORresidence_part_house_direction"
+possible_values = [ "RA_STDIR_CODE",]
+
+[residence_part_house_number]
+field_name = "residence_part_house_number"
+description = "DESCRIPTION NEEDED FORresidence_part_house_number"
+possible_values = [ "RA_HS_NUM",]
+
+[residence_part_number]
+field_name = "residence_part_number"
+description = "DESCRIPTION NEEDED FORresidence_part_number"
+possible_values = [ "RHNUM",]
+
+[residence_part_number_suffix]
+field_name = "residence_part_number_suffix"
+description = "DESCRIPTION NEEDED FORresidence_part_number_suffix"
+possible_values = [ "RDESIG",]
+
+[residence_part_state]
+field_name = "residence_part_state"
+description = "DESCRIPTION NEEDED FORresidence_part_state"
+possible_values = [ "RA_STATE", "RSTATE",]
+
+[residence_part_street_direction]
+field_name = "residence_part_street_direction"
+description = "DESCRIPTION NEEDED FORresidence_part_street_direction"
+possible_values = [ "STRDIR",]
+
+[residence_part_street_name]
+field_name = "residence_part_street_name"
+description = "DESCRIPTION NEEDED FORresidence_part_street_name"
+possible_values = [ "RA_STREET_NAME", "STRNAM", "RSTNAME",]
+
+[residence_part_street_number]
+field_name = "residence_part_street_number"
+description = "DESCRIPTION NEEDED FORresidence_part_street_number"
+possible_values = [ "BLKNUM",]
+
+[residence_part_street_post_type]
+field_name = "residence_part_street_post_type"
+description = "DESCRIPTION NEEDED FORresidence_part_street_post_type"
+possible_values = [ "RSTSFX",]
+
+[residence_part_street_pre_directional]
+field_name = "residence_part_street_pre_directional"
+description = "DESCRIPTION NEEDED FORresidence_part_street_pre_directional"
+possible_values = [ "STRPRE",]
+
+[residence_part_street_suffix]
+field_name = "residence_part_street_suffix"
+description = "DESCRIPTION NEEDED FORresidence_part_street_suffix"
+possible_values = [ "RA_STDIR_CODE_POST",]
+
+[residence_part_street_type]
+field_name = "residence_part_street_type"
+description = "DESCRIPTION NEEDED FORresidence_part_street_type"
+possible_values = [ "STRTYP", "RSTTYPE", "RA_STTYPE",]
+
+[residence_part_unit_number]
+field_name = "residence_part_unit_number"
+description = "DESCRIPTION NEEDED FORresidence_part_unit_number"
+possible_values = [ "RA_UNIT_NUM", "UNITNO", "RUNUM",]
+
+[residence_part_unit_type]
+field_name = "residence_part_unit_type"
+description = "DESCRIPTION NEEDED FORresidence_part_unit_type"
+possible_values = [ "UNITYP", "RA_UTYP_CODE", "RUTYPE",]
+
+[residence_part_zip4]
+field_name = "residence_part_zip4"
+description = "DESCRIPTION NEEDED FORresidence_part_zip4"
+possible_values = [ "RZIP+4",]
+
+[residence_part_zip5]
+field_name = "residence_part_zip5"
+description = "DESCRIPTION NEEDED FORresidence_part_zip5"
+possible_values = [ "RZIP", "RA_ZIP_CODE", "RZIPCD",]
+
+[residence_parts_house_number]
+field_name = "residence_parts_house_number"
+description = "DESCRIPTION NEEDED FORresidence_parts_house_number"
+possible_values = [ "HOUSENUMBER",]
+
+[residence_parts_street_name]
+field_name = "residence_parts_street_name"
+description = "DESCRIPTION NEEDED FORresidence_parts_street_name"
+possible_values = [ "STREETNAME",]
+
+[residence_parts_unit_number]
+field_name = "residence_parts_unit_number"
+description = "DESCRIPTION NEEDED FORresidence_parts_unit_number"
+possible_values = [ "UNITNUMBER",]
+
+[residence_parts_unit_type]
+field_name = "residence_parts_unit_type"
+description = "DESCRIPTION NEEDED FORresidence_parts_unit_type"
+possible_values = [ "UNITTYPE",]
+
+[residence_postal_code]
+field_name = "residence_postal_code"
+description = "DESCRIPTION NEEDED FORresidence_postal_code"
+possible_values = [ "RESIDENTIAL_POSTALCODE",]
+
+[residence_standardized]
+field_name = "residence_standardized"
+description = "DESCRIPTION NEEDED FORresidence_standardized"
+possible_values = [ "RESIDENCEADDRESS",]
+
+[residence_state]
+field_name = "residence_state"
+description = "DESCRIPTION NEEDED FORresidence_state"
+possible_values = [ "RESIDENTIAL_STATE", "ADDRESSSTATE",]
+
+[residence_zip4]
+field_name = "residence_zip4"
+description = "DESCRIPTION NEEDED FORresidence_zip4"
+possible_values = [ "RESIDENTIAL_ZIP_PLUS4",]
+
+[residence_zip5]
+field_name = "residence_zip5"
+description = "DESCRIPTION NEEDED FORresidence_zip5"
+possible_values = [ "RESIDENTIAL_ZIP", "ADDRESSZIP",]
+
+[voter_absentee]
+field_name = "voter_absentee"
+description = "DESCRIPTION NEEDED FORvoter_absentee"
+possible_values = [ "ABSENTEE",]
+
+[voter_county]
+field_name = "voter_county"
+description = "DESCRIPTION NEEDED FORvoter_county"
+possible_values = [ "COUNTY",]
+
+[voter_political_party]
+field_name = "voter_political_party"
+description = "DESCRIPTION NEEDED FORvoter_political_party"
+possible_values = [ "PARTY_AFFILIATION",]
+
+[voter_precinct_code]
+field_name = "voter_precinct_code"
+description = "DESCRIPTION NEEDED FORvoter_precinct_code"
+possible_values = [ "PCTCOD",]
+
+[voter_precinct_name]
+field_name = "voter_precinct_name"
+description = "DESCRIPTION NEEDED FORvoter_precinct_name"
+possible_values = [ "PRECINCT", "PCTNAME", "PRECINCT_NAME",]
+
+[voter_precinct_number]
+field_name = "voter_precinct_number"
+description = "DESCRIPTION NEEDED FORvoter_precinct_number"
+possible_values = [ "PRECINCT_CODE", "PREC_CODE", "PCT",]
+
+[voter_precinct_split]
+field_name = "voter_precinct_split"
+description = "DESCRIPTION NEEDED FORvoter_precinct_split"
+possible_values = [ "PCTSPT",]
+
+[voter_registration_application_source]
+field_name = "voter_registration_application_source"
+description = "DESCRIPTION NEEDED FORvoter_registration_application_source"
+possible_values = [ "APPLICATION SOURCE",]
+
+[voter_registration_date]
+field_name = "voter_registration_date"
+description = "DESCRIPTION NEEDED FORvoter_registration_date"
+possible_values = [ "REGISTRATIONDATE", "REGISTRATION_DATE", "EDR", "VOTE_ELIGIBLE_DATE", "EDRDAT",]
+
+[voter_registration_permanent_absentee]
+field_name = "voter_registration_permanent_absentee"
+description = "DESCRIPTION NEEDED FORvoter_registration_permanent_absentee"
+possible_values = [ "IS PERMANENT ABSENTEE",]
+
+[voter_registration_status]
+field_name = "voter_registration_status"
+description = "DESCRIPTION NEEDED FORvoter_registration_status"
+possible_values = [ "VOTER STATUS", "STATUS", "VOTER_STATUS",]
+
+[voter_registration_status_reason]
+field_name = "voter_registration_status_reason"
+description = "DESCRIPTION NEEDED FORvoter_registration_status_reason"
+possible_values = [ "VOTER_STATUS_REASON", "VOTER STATUS REASON",]
+
+[voter_registration_type]
+field_name = "voter_registration_type"
+description = "DESCRIPTION NEEDED FORvoter_registration_type"
+possible_values = [ "VOTER TYPE",]
+
+[voter_vuid]
+field_name = "voter_vuid"
+description = "DESCRIPTION NEEDED FORvoter_vuid"
+possible_values = [ "VUIDNO", "VUID", "VOTER REG NUMBER", "SOS_VOTERID", "VTRID",]

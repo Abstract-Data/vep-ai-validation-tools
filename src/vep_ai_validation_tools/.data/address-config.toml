@@ -1,0 +1,77 @@
+DATE_FORMATS = ['%Y-%m-%d', '%m/%d/%Y', '%m/%d/%y', '%Y%m%d']
+DATE_COLUMNS = ['person_dob', 'voter_registration_date', 'mail_change_date', 'residence_effective_date']
+NAME_COLUMNS = ['person_name_first', 'person_name_last', 'person_name_middle']
+ADDRESS_TYPES = ['residence', 'mail']
+
+PO_BOX_PARSED_FIELDS = [ 'USPSBoxType', 'USPSBoxID', 'USPSBoxGroupType', 'USPSBoxGroupID',]
+ADDRESS1_PARSED_FIELDS = ['AddressNumberPrefix', 'AddressNumber', 'AddressNumberSuffix', 'StreetNamePreModifier', 'StreetNamePreDirectional', 'StreetNamePreType', 'StreetName', 'StreetNamePostType', 'StreetNamePostDirectional',]
+ADDRESS2_PARSED_FIELDS = ['SubaddressType', 'SubaddressIdentifier', 'BuildingName', 'OccupancyType', 'OccupancyIdentifier',]
+ADDRESS_CITY_PARSED_FIELDS = ['PlaceName']
+ADDRESS_STATE_PARSED_FIELDS = ['StateName']
+ADDRESS_ZIP_PARSED_FIELDS =  ['ZipCode']
+
+
+states = [
+    "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS",
+    "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY",
+    "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV",
+    "WI", "WY"
+]
+military_states = ["AA", "AE", "AP"]
+military_cities = ["APO", "FPO", "DPO"]
+
+[country_zip_regex]
+afghanistan = "^\\d{4}$"
+"åland islands" = "^\\d{5}$"
+albania = "^\\d{4}$"
+algeria = "^\\d{5}$"
+"american samoa" = "^\\d{5}(-{1}\\d{4,6})$"
+andorra = "^[Aa][Dd]\\d{3}$"
+angola = ""
+anguilla = "^[Aa][I][-][2][6][4][0]$"
+"antigua and barbuda" = ""
+argentina = "^\\d{4}|[A-Za-z]\\d{4}[a-zA-Z]{3}$"
+armenia = "^\\d{4}$"
+aruba = ""
+"ascension island" = "^[Aa][Ss][Cc][Nn]\\s{0,1}[1][Zz][Zz]$"
+australia = "^\\d{4}$"
+austria = "^\\d{4}$"
+azerbaijan = "^[Aa][Zz]\\d{4}$"
+bahamas = ""
+bahrain = "^\\d{3,4}$"
+bangladesh = "^\\d{4}$"
+barbados = "^[Aa][Zz]\\d{5}$"
+belarus = "^\\d{6}$"
+belgium = "^\\d{4}$"
+belize = ""
+benin = ""
+bermuda = "^[A-Za-z]{2}\\s([A-Za-z]{2}|\\d{2})$"
+bhutan = "^\\d{5}$"
+bolivia = "^\\d{4}$"
+"bosnia and herzegovina" = "^\\d{5}$"
+botswana = ""
+brazil = "^\\d{5}-\\d{3}$"
+"british virgin islands" = "^[Vv][Gg]\\d{4}$"
+brunei = "^[A-Za-z]{2}\\d{4}$"
+bulgaria = "^\\d{4}$"
+"burkina faso" = ""
+burundi = ""
+cambodia = "^\\d{5}$"
+cameroon = ""
+canada = "^(?=[^DdFfIiOoQqUu\\d\\s])[A-Za-z]\\d(?=[^DdFfIiOoQqUu\\d\\s])[A-Za-z]\\s{0,1}\\d(?=[^DdFfIiOoQqUu\\d\\s])[A-Za-z]\\d$"
+"cape verde" = "^\\d{4}$"
+"cayman islands" = "^[Kk][Yy]\\d[-\\s]{0,1}\\d{4}$"
+chad = "^\\d{5}$"
+chile = "^\\d{7}\\s\\(\\d{3}-\\d{4}\\)$"
+china = "^\\d{6}$"
+colombia = "^\\d{6}$"
+"costa rica" = "^\\d{4,5}$"
+croatia = "^\\d{5}$"
+cuba = "^\\d{5}$"
+cyprus = "^\\d{4}$"
+"czech republic" = "^\\d{5}\\s\\(\\d{3}\\s\\d{2}\\)$"
+denmark = "^\\d{4}$"
+dominica = ""
+"dominican republic" = "^\\d{5}$"
+"united states" = "^\\d{5}(-\\d{4})?$"
+"united kingdom" = "^([A-Z]{1,2}\\d[A-Z\\d]? \\d[A-Z]{2}|GIR 0AA)$"

@@ -32,47 +32,47 @@ print_error() {
 # Function to detect project type and features
 detect_project_features() {
     local features=""
-    
+
     # Check for common Python features
     if [ -f "pyproject.toml" ]; then
         features="$features- **📦 Modern Python Package** - Built with pyproject.toml and UV\n"
     fi
-    
+
     if [ -f ".pre-commit-config.yaml" ]; then
         features="$features- **🔧 Pre-commit Hooks** - Automated code quality checks\n"
     fi
-    
+
     if [ -d ".github/workflows" ]; then
         features="$features- **🤖 GitHub Actions** - Automated CI/CD pipeline\n"
     fi
-    
+
     if [ -f "pyproject.toml" ] && grep -q "pytest" pyproject.toml; then
         features="$features- **🧪 Testing** - Comprehensive test suite with pytest\n"
     fi
-    
+
     if [ -f "pyproject.toml" ] && grep -q "black" pyproject.toml; then
         features="$features- **🎨 Code Formatting** - Black and isort for consistent styling\n"
     fi
-    
+
     if [ -f "pyproject.toml" ] && grep -q "mypy" pyproject.toml; then
         features="$features- **🔍 Type Checking** - MyPy for static type analysis\n"
     fi
-    
+
     if [ -d "docs" ] || [ -d ".docs" ]; then
         features="$features- **📚 Documentation** - Comprehensive project documentation\n"
     fi
-    
+
     if [ -f "SECURITY.md" ]; then
         features="$features- **🔒 Security** - Security policy and vulnerability reporting\n"
     fi
-    
+
     echo -e "$features"
 }
 
 # Function to analyze source code structure
 analyze_source_structure() {
     local description=""
-    
+
     if [ -d "src" ]; then
         local package_dirs=$(find src -maxdepth 1 -type d | grep -v "^src$" | wc -l)
         if [ "$package_dirs" -gt 0 ]; then
@@ -85,13 +85,13 @@ analyze_source_structure() {
             description="$description\`\`\`\n\n"
         fi
     fi
-    
+
     # Check for CLI scripts
     if [ -f "pyproject.toml" ] && grep -q "scripts" pyproject.toml; then
         description="$description### 🖥️ Command Line Interface\n\n"
         description="$descriptionThis package provides command-line tools. See the project configuration for available commands.\n\n"
     fi
-    
+
     echo -e "$description"
 }
 
@@ -108,7 +108,7 @@ generate_installation_instructions() {
     echo "uv sync"
     echo "\`\`\`"
     echo ""
-    
+
     if grep -q "hatchling" pyproject.toml 2>/dev/null; then
         echo "### Using pip"
         echo ""
@@ -123,7 +123,7 @@ generate_installation_instructions() {
 generate_usage_examples() {
     echo "## 📖 Usage"
     echo ""
-    
+
     # Look for main module or CLI entry points
     if [ -f "src/vep_ai_validation_tools/__main__.py" ]; then
         echo "### Command Line Usage"
@@ -133,7 +133,7 @@ generate_usage_examples() {
         echo "\`\`\`"
         echo ""
     fi
-    
+
     echo "### Python API"
     echo ""
     echo "\`\`\`python"
@@ -147,20 +147,20 @@ generate_usage_examples() {
 # Main function
 main() {
     print_status "🔍 Analyzing project structure for README auto-generation..."
-    
+
     # Check if this is a template project
     if grep -q "vep-ai-validation-tools" pyproject.toml 2>/dev/null; then
         print_warning "This appears to be a template project. Auto-generation will use template variables."
     fi
-    
+
     print_status "Detecting project features..."
     local features=$(detect_project_features)
-    
+
     print_status "Analyzing source code structure..."
     local structure=$(analyze_source_structure)
-    
+
     print_status "Generating content sections..."
-    
+
     # Create auto-generated content file
     cat > /tmp/auto-generated-readme-content.md << EOF
 <!-- Auto-generated content sections -->
@@ -177,7 +177,7 @@ EOF
 
     print_success "✅ Auto-generated content saved to /tmp/auto-generated-readme-content.md"
     print_status "You can review and integrate this content into your README.md"
-    
+
     # Show preview
     echo ""
     print_status "Preview of generated content:"
