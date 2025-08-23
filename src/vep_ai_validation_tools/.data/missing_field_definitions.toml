@@ -1,0 +1,969 @@
+[vrID]
+internal_field = ""
+field_name = "vrID"
+example_values = [ "2", "1185355", "1419694", "1547459", "6", "9", "1", "1419559", "1271741", "1111895",]
+
+[MZIPCD]
+internal_field = ""
+field_name = "MZIPCD"
+example_values = [ "78747", "78734", "7", "78704", "78653", "6", "9", "1", "78746", "78745",]
+
+[SUSIND]
+internal_field = ""
+field_name = "SUSIND"
+example_values = [ "a", "t", "S", "e", "L", "N", "O", "RETURN CERT MASS MAIL", "R", "C",]
+
+[SUPRES]
+internal_field = ""
+field_name = "SUPRES"
+example_values = [ "N",]
+
+[DIST09]
+internal_field = ""
+field_name = "DIST09"
+example_values = [ "M37", "M50", "M72", "M80", "M16", "M55", "M03", "M36", "M15", "M83",]
+
+[DIST10]
+internal_field = ""
+field_name = "DIST10"
+example_values = [ "2", "E01", "E02", "E06", "E10", "E03", "E08", "EB1", "E", "E11",]
+
+[DIST15]
+internal_field = ""
+field_name = "DIST15"
+example_values = [ "L02", "L01", "L04", "L03", "L", "0", "3",]
+
+[DIST20]
+internal_field = ""
+field_name = "DIST20"
+example_values = [ "E17P", "E07", "7", "E", "E15", "1", "E17U", "E17", "P",]
+
+[DIST22]
+internal_field = ""
+field_name = "DIST22"
+example_values = [ "2", "W", "7", "W18", "W11", "W03", "1", "W08", "0",]
+
+[GR22VOTED]
+internal_field = ""
+field_name = "GR22VOTED"
+example_values = [ "2", "20221202", "20221209", "20221203", "20221206", "1", "20221213", "20221207", "20221205", "3",]
+
+[GR22PLACE]
+internal_field = ""
+field_name = "GR22PLACE"
+example_values = [ "450", "341", "6", "410", "250", "215", "436", "3", "383", "344",]
+
+[GR22PARTY]
+internal_field = ""
+field_name = "GR22PARTY"
+example_values = [ "", "",]
+
+[G22VOTED]
+internal_field = ""
+field_name = "G22VOTED"
+example_values = [ "2", "20221028", "20221102", "20221031", "20221030", "20221108", "1", "20221027", "20221104", "3",]
+
+[G22PLACE]
+internal_field = ""
+field_name = "G22PLACE"
+example_values = [ "252", "341", "271", "112", "366", "1", "415", "280", "410", "294",]
+
+[G22PARTY]
+internal_field = ""
+field_name = "G22PARTY"
+example_values = [ "", "",]
+
+[PR22VOTED]
+internal_field = ""
+field_name = "PR22VOTED"
+example_values = [ "2", "20220516", "5", "20220517", "4", "0", "20220524", "20220518",]
+
+[PR22PLACE]
+internal_field = ""
+field_name = "PR22PLACE"
+example_values = [ "450", "141", "113", "215", "3", "347", "235", "242", "236", "210",]
+
+[PR22PARTY]
+internal_field = ""
+field_name = "PR22PARTY"
+example_values = [ "DEM", "REP", "E", "", "R", "P",]
+
+[L22VOTED]
+internal_field = ""
+field_name = "L22VOTED"
+example_values = [ "2", "20220502", "9", "20220430", "3", "20220503", "20220501", "20220428", "20220429", "20220426",]
+
+[L22PLACE]
+internal_field = ""
+field_name = "L22PLACE"
+example_values = [ "2", "7", "214", "271", "341", "366", "415", "280", "106", "363",]
+
+[L22PARTY]
+internal_field = ""
+field_name = "L22PARTY"
+example_values = [ "", "",]
+
+[P22VOTED]
+internal_field = ""
+field_name = "P22VOTED"
+example_values = [ "2", "20220219", "20220216", "20220225", "20220301", "1", "20220224", "0", "3",]
+
+[P22PLACE]
+internal_field = ""
+field_name = "P22PLACE"
+example_values = [ "454", "7", "352", "341", "280", "220", "380", "436", "347", "180",]
+
+[P22PARTY]
+internal_field = ""
+field_name = "P22PARTY"
+example_values = [ "D", "REP", "E", "DEM", "M", "P", "R", "",]
+
+[SE22VOTED]
+internal_field = ""
+field_name = "SE22VOTED"
+example_values = [ "2", "20220125", "1", "20220119", "5", "20220121", "0",]
+
+[SE22PLACE]
+internal_field = ""
+field_name = "SE22PLACE"
+example_values = [ "2", "113", "215", "4",]
+
+[SE22PARTY]
+internal_field = ""
+field_name = "SE22PARTY"
+example_values = [ "", "",]
+
+[G21VOTED]
+internal_field = ""
+field_name = "G21VOTED"
+example_values = [ "2", "20211022", "20211021", "9", "1", "20211029", "20211019", "20211102", "20211025", "20211028",]
+
+[G21PLACE]
+internal_field = ""
+field_name = "G21PLACE"
+example_values = [ "2", "149", "438", "352", "461", "112", "366", "277", "404", "262",]
+
+[G21PARTY]
+internal_field = ""
+field_name = "G21PARTY"
+example_values = [ "", "",]
+
+[L21VOTED]
+internal_field = ""
+field_name = "L21VOTED"
+example_values = [ "2", "20210421", "6", "1", "20210427", "20210422", "20210424", "20210425", "20210426", "20210420",]
+
+[L21PLACE]
+internal_field = ""
+field_name = "L21PLACE"
+example_values = [ "0",]
+
+[L21PARTY]
+internal_field = ""
+field_name = "L21PARTY"
+example_values = [ "", "",]
+
+[GR20VOTED]
+internal_field = ""
+field_name = "GR20VOTED"
+example_values = [ "2", "20201210", "20201130", "1", "20201205", "20201211", "20201215", "20201209", "20201208", "0",]
+
+[GR20PLACE]
+internal_field = ""
+field_name = "GR20PLACE"
+example_values = [ "2", "337", "438", "234", "304", "362", "437", "262", "3", "240",]
+
+[G20VOTED]
+internal_field = ""
+field_name = "G20VOTED"
+example_values = [ "2", "7", "1", "20201027", "20201015", "20201019", "20201021", "20201030", "20201014", "20201020",]
+
+[G20PLACE]
+internal_field = ""
+field_name = "G20PLACE"
+example_values = [ "431", "411", "149", "461", "316", "112", "366", "277", "410", "415",]
+
+[SE20VOTED]
+internal_field = ""
+field_name = "SE20VOTED"
+example_values = [ "2", "7", "20200701", "20200706", "1", "20200623", "20200703", "20200708", "20200714", "20200710",]
+
+[SE20PLACE]
+internal_field = ""
+field_name = "SE20PLACE"
+example_values = [ "2", "209", "274", "7", "112", "415", "437", "350", "3", "258",]
+
+[SE20PARTY]
+internal_field = ""
+field_name = "SE20PARTY"
+example_values = [ "D", "DEM", "E", "REP", "M",]
+
+[PR20VOTED]
+internal_field = ""
+field_name = "PR20VOTED"
+example_values = [ "2", "7", "20200701", "20200706", "6", "1", "9", "20200623", "20200703", "20200708",]
+
+[PR20PLACE]
+internal_field = ""
+field_name = "PR20PLACE"
+example_values = [ "274", "316", "112", "415", "1", "258", "425", "458", "367", "126",]
+
+[PR20PARTY]
+internal_field = ""
+field_name = "PR20PARTY"
+example_values = [ "D", "DEM", "E", "REP", "M",]
+
+[P20VOTED]
+internal_field = ""
+field_name = "P20VOTED"
+example_values = [ "2", "20200220", "20200219", "20200221", "20200218", "20200226", "20200303", "20200225", "3", "20200223",]
+
+[P20PLACE]
+internal_field = ""
+field_name = "P20PLACE"
+example_values = [ "316", "112", "366", "277", "415", "1", "156", "405", "258", "425",]
+
+[P20PARTY]
+internal_field = ""
+field_name = "P20PARTY"
+example_values = [ "D", "DEM", "E", "REP", "M",]
+
+[G19VOTED]
+internal_field = ""
+field_name = "G19VOTED"
+example_values = [ "2", "20191029", "6", "20191023", "20191027", "9", "1", "20191101", "20191025", "20191105",]
+
+[G19PLACE]
+internal_field = ""
+field_name = "G19PLACE"
+example_values = [ "316", "6", "1", "425", "458", "367", "354", "140", "154", "241",]
+
+[GA19VOTED]
+internal_field = ""
+field_name = "GA19VOTED"
+example_values = [ "2", "1", "4", "0", "3", "9",]
+
+[GA19PLACE]
+internal_field = ""
+field_name = "GA19PLACE"
+example_values = [ "9", "3", "1",]
+
+[GR18VOTED]
+internal_field = ""
+field_name = "GR18VOTED"
+example_values = [ "2", "20181206", "8", "20181201", "20181207", "1", "0", "20181211",]
+
+[GR18PLACE]
+internal_field = ""
+field_name = "GR18PLACE"
+example_values = [ "253", "304", "126", "362", "366", "133", "358", "437", "5", "463",]
+
+[G18VOTED]
+internal_field = ""
+field_name = "G18VOTED"
+example_values = [ "2", "20181028", "20181022", "6", "20181031", "1", "20181109", "20181002", "20181015", "20181106",]
+
+[G18PLACE]
+internal_field = ""
+field_name = "G18PLACE"
+example_values = [ "431", "411", "149", "316", "112", "366", "277", "410", "415", "1",]
+
+[G18PARTY]
+internal_field = ""
+field_name = "G18PARTY"
+example_values = [ "E", "D", "M",]
+
+[PR18VOTED]
+internal_field = ""
+field_name = "PR18VOTED"
+example_values = [ "2", "8", "20180516", "6", "20180423", "1", "20180515", "5", "20180522", "20180518",]
+
+[PR18PLACE]
+internal_field = ""
+field_name = "PR18PLACE"
+example_values = [ "308", "209", "362", "258", "3", "240", "247", "420", "126", "339",]
+
+[PR18PARTY]
+internal_field = ""
+field_name = "PR18PARTY"
+example_values = [ "P", "DEM", "E", "R", "REP",]
+
+[GA18VOTED]
+internal_field = ""
+field_name = "GA18VOTED"
+example_values = [ "2", "8", "4", "0", "1",]
+
+[GA18PLACE]
+internal_field = ""
+field_name = "GA18PLACE"
+example_values = [ "9", "3", "1",]
+
+[P18VOTED]
+internal_field = ""
+field_name = "P18VOTED"
+example_values = [ "2", "20180302", "20180224", "20180220", "20180223", "6", "20180225", "1", "20180306", "20180228",]
+
+[P18PLACE]
+internal_field = ""
+field_name = "P18PLACE"
+example_values = [ "2", "112", "366", "1", "458", "354", "126", "142", "241", "372",]
+
+[P18PARTY]
+internal_field = ""
+field_name = "P18PARTY"
+example_values = [ "D", "DEM", "E", "REP", "M",]
+
+[G17VOTED]
+internal_field = ""
+field_name = "G17VOTED"
+example_values = [ "2", "20171025", "7", "20171107", "1", "3", "20171103", "20171031", "20171102", "20171028",]
+
+[G17PLACE]
+internal_field = ""
+field_name = "G17PLACE"
+example_values = [ "2", "234", "316", "366", "9", "408", "262", "156", "458", "367",]
+
+[GR16VOTED]
+internal_field = ""
+field_name = "GR16VOTED"
+example_values = [ "2", "20161205", "20161204", "20161202", "20161213", "6", "1", "20161209", "0", "3",]
+
+[GR16PLACE]
+internal_field = ""
+field_name = "GR16PLACE"
+example_values = [ "2", "229", "247", "7", "253", "126", "463", "258", "3", "240",]
+
+[SE16VOTED]
+internal_field = ""
+field_name = "SE16VOTED"
+example_values = [ "2", "20161029", "20161024", "20161026", "6", "1", "20161104", "20161102", "20161028", "20161031",]
+
+[SE16PLACE]
+internal_field = ""
+field_name = "SE16PLACE"
+example_values = [ "411", "7", "274", "277", "410", "216", "404", "262", "156", "160",]
+
+[PR16VOTED]
+internal_field = ""
+field_name = "PR16VOTED"
+example_values = [ "2", "20160524", "6", "1", "5", "4", "0",]
+
+[PR16PLACE]
+internal_field = ""
+field_name = "PR16PLACE"
+example_values = [ "2", "8", "5", "240",]
+
+[PR16PARTY]
+internal_field = ""
+field_name = "PR16PARTY"
+example_values = [ "D", "DEM", "E", "M",]
+
+[GA16VOTED]
+internal_field = ""
+field_name = "GA16VOTED"
+example_values = [ "2", "20160502", "20160503", "6", "1", "20160427", "20160428", "3", "20160430", "8",]
+
+[GA16PLACE]
+internal_field = ""
+field_name = "GA16PLACE"
+example_values = [ "2", "209", "304", "461", "316", "362", "366", "437", "3", "425",]
+
+[P16VOTED]
+internal_field = ""
+field_name = "P16VOTED"
+example_values = [ "2", "20160222", "6", "1", "20160301", "20160220", "20160223", "20160217", "3", "20160226",]
+
+[P16PLACE]
+internal_field = ""
+field_name = "P16PLACE"
+example_values = [ "112", "366", "277", "1", "410", "361", "160", "258", "425", "458",]
+
+[P16PARTY]
+internal_field = ""
+field_name = "P16PARTY"
+example_values = [ "D", "DEM", "E", "REP", "M", "R", "P",]
+
+[SE15VOTED]
+internal_field = ""
+field_name = "SE15VOTED"
+example_values = [ "2", "5", "0", "1",]
+
+[SE15PLACE]
+internal_field = ""
+field_name = "SE15PLACE"
+example_values = [ "3", "7",]
+
+[GR14VOTED]
+internal_field = ""
+field_name = "GR14VOTED"
+example_values = [ "2", "20141215", "6", "20141208", "1", "20141212", "20141216", "4", "0", "20141206",]
+
+[GR14PLACE]
+internal_field = ""
+field_name = "GR14PLACE"
+example_values = [ "209", "304", "6", "366", "259", "362", "258", "240", "3", "425",]
+
+[GA14VOTED]
+internal_field = ""
+field_name = "GA14VOTED"
+example_values = [ "2", "5", "4", "0", "1",]
+
+[GA14PLACE]
+internal_field = ""
+field_name = "GA14PLACE"
+example_values = [ "0", "5", "1",]
+
+[PR14VOTED]
+internal_field = ""
+field_name = "PR14VOTED"
+example_values = [ "2", "7", "20140522", "1", "5", "20140523", "4", "0", "20140527",]
+
+[PR14PLACE]
+internal_field = ""
+field_name = "PR14PLACE"
+example_values = [ "304", "6", "1", "211", "437", "153", "241", "463", "258", "422",]
+
+[PR14PARTY]
+internal_field = ""
+field_name = "PR14PARTY"
+example_values = [ "P", "DEM", "E", "R", "REP",]
+
+[P14VOTED]
+internal_field = ""
+field_name = "P14VOTED"
+example_values = [ "2", "20140304", "20140223", "20140228", "1", "20140227", "20140220", "4", "0", "3",]
+
+[P14PLACE]
+internal_field = ""
+field_name = "P14PLACE"
+example_values = [ "2", "7", "234", "304", "112", "362", "361", "437", "258", "425",]
+
+[P14PARTY]
+internal_field = ""
+field_name = "P14PARTY"
+example_values = [ "D", "M", "DEM", "E", "REP",]
+
+[GA13VOTED]
+internal_field = ""
+field_name = "GA13VOTED"
+example_values = [ "2", "20130511", "20130429", "20130504", "1", "5", "20130507", "0", "3",]
+
+[GA12VOTED]
+internal_field = ""
+field_name = "GA12VOTED"
+example_values = [ "2", "20120508", "20120502", "20120505", "20120512", "20120507", "1", "5", "0",]
+
+[PR12VOTED]
+internal_field = ""
+field_name = "PR12VOTED"
+example_values = [ "2", "7", "20120731", "20120725", "20120723", "20120727", "1", "0", "3",]
+
+[PR12PARTY]
+internal_field = ""
+field_name = "PR12PARTY"
+example_values = [ "D", "M", "DEM", "E", "REP",]
+
+[P12VOTED]
+internal_field = ""
+field_name = "P12VOTED"
+example_values = [ "2", "20120518", "20120524", "1", "5", "20120529", "0", "20120525",]
+
+[P12PARTY]
+internal_field = ""
+field_name = "P12PARTY"
+example_values = [ "D", "M", "DEM", "E", "REP",]
+
+[SE12VOTED]
+internal_field = ""
+field_name = "SE12VOTED"
+example_values = [ "2", "4", "0", "1",]
+
+[SE12PLACE]
+internal_field = ""
+field_name = "SE12PLACE"
+example_values = [ "2", "4", "0",]
+
+[SE12PARTY]
+internal_field = ""
+field_name = "SE12PARTY"
+example_values = [ "E", "D", "M",]
+
+[GA11VOTED]
+internal_field = ""
+field_name = "GA11VOTED"
+example_values = [ "2", "20110514", "20110509", "1", "20110506", "5", "20110508", "4", "0",]
+
+[GA10VOTED]
+internal_field = ""
+field_name = "GA10VOTED"
+example_values = [ "2", "20100503", "5", "0", "20100508", "1",]
+
+[PR10VOTED]
+internal_field = ""
+field_name = "PR10VOTED"
+example_values = [ "2", "20100413", "8", "4", "0", "1",]
+
+[PR10PARTY]
+internal_field = ""
+field_name = "PR10PARTY"
+example_values = [ "DEM", "E", "R", "P",]
+
+[P10VOTED]
+internal_field = ""
+field_name = "P10VOTED"
+example_values = [ "2", "20100226", "6", "20100217", "20100302", "1", "20100225", "20100219", "0",]
+
+[P10PARTY]
+internal_field = ""
+field_name = "P10PARTY"
+example_values = [ "D", "M", "DEM", "E", "REP",]
+
+[GA09VOTED]
+internal_field = ""
+field_name = "GA09VOTED"
+example_values = [ "2", "20090505", "8", "20090428", "20090509", "9", "20090427", "4", "0",]
+
+[GA08VOTED]
+internal_field = ""
+field_name = "GA08VOTED"
+example_values = [ "2", "20080506", "8", "20080502", "20080510", "5", "0", "3",]
+
+[PR08VOTED]
+internal_field = ""
+field_name = "PR08VOTED"
+example_values = [ "2", "8", "20080408", "4", "0", "20080401",]
+
+[PR08PARTY]
+internal_field = ""
+field_name = "PR08PARTY"
+example_values = [ "D", "DEM", "E", "M",]
+
+[P08VOTED]
+internal_field = ""
+field_name = "P08VOTED"
+example_values = [ "2", "20080229", "8", "20080304", "20080224", "9", "1", "20080227", "20080219", "20080223",]
+
+[P08PARTY]
+internal_field = ""
+field_name = "P08PARTY"
+example_values = [ "D", "M", "DEM", "E", "REP",]
+
+[GA07VOTED]
+internal_field = ""
+field_name = "GA07VOTED"
+example_values = [ "2", "7", "20070512", "1", "20070508", "5", "20070506", "0",]
+
+[G06VOTED]
+internal_field = ""
+field_name = "G06VOTED"
+example_values = [ "2", "20061026", "20061029", "20061023", "20061107", "20061030", "6", "20061103", "20061102", "1",]
+
+[P06VOTED]
+internal_field = ""
+field_name = "P06VOTED"
+example_values = [ "2", "20060307", "20060224", "6", "5", "20060301", "0",]
+
+[P06PARTY]
+internal_field = ""
+field_name = "P06PARTY"
+example_values = [ "D", "M", "DEM", "E", "REP",]
+
+[GA04VOTED]
+internal_field = ""
+field_name = "GA04VOTED"
+example_values = [ "2", "20040511", "20040508", "20040515", "20040428", "5", "20040503", "4", "0", "20040506",]
+
+[P04VOTED]
+internal_field = ""
+field_name = "P04VOTED"
+example_values = [ "2", "20040309", "20040305", "20040304", "20040226", "20040225", "20040302", "4", "0", "3",]
+
+[P04PARTY]
+internal_field = ""
+field_name = "P04PARTY"
+example_values = [ "D", "M", "DEM", "E", "REP",]
+
+[P02VOTED]
+internal_field = ""
+field_name = "P02VOTED"
+example_values = [ "2", "20020227", "20020303", "1", "20020312", "20020223", "0", "3",]
+
+[P02PARTY]
+internal_field = ""
+field_name = "P02PARTY"
+example_values = [ "D", "M", "DEM", "E", "REP",]
+
+[P00VOTED]
+internal_field = ""
+field_name = "P00VOTED"
+example_values = [ "2", "20000301", "8", "20000314", "20000307", "0",]
+
+[P00PARTY]
+internal_field = ""
+field_name = "P00PARTY"
+example_values = [ "D", "M", "DEM", "E", "REP",]
+
+[G96VOTED]
+internal_field = ""
+field_name = "G96VOTED"
+example_values = [ "19961023", "19961101", "6", "9", "1", "19961019", "19961022", "19961015", "19961028", "19961030",]
+
+[SE96VOTED]
+internal_field = ""
+field_name = "SE96VOTED"
+example_values = [ "19960523", "6", "19960529", "9", "1", "5", "0", "3",]
+
+[P96VOTED]
+internal_field = ""
+field_name = "P96VOTED"
+example_values = [ "19960305", "19960304", "19960229", "19960301", "19960308", "6", "9", "1", "19960311", "0",]
+
+[P96PARTY]
+internal_field = ""
+field_name = "P96PARTY"
+example_values = [ "P", "DEM", "E", "R", "REP",]
+
+[PR24VOTED]
+internal_field = ""
+field_name = "PR24VOTED"
+example_values = [ "2", "20240508", "20240523", "5", "20240528", "4", "0", "3",]
+
+[PR24PLACE]
+internal_field = ""
+field_name = "PR24PLACE"
+example_values = [ "358", "235", "5", "4", "0", "243",]
+
+[PR24PARTY]
+internal_field = ""
+field_name = "PR24PARTY"
+example_values = [ "DEM", "D", "DEM", "E", "", "M",]
+
+[L24VOTED]
+internal_field = ""
+field_name = "L24VOTED"
+example_values = [ "2", "20240425", "20240410", "20240504", "20240429", "20240424", "4", "0", "3", "20240423",]
+
+[L24PLACE]
+internal_field = ""
+field_name = "L24PLACE"
+example_values = [ "450", "236", "210", "173", "413", "433", "113", "358", "5", "4",]
+
+[L24PARTY]
+internal_field = ""
+field_name = "L24PARTY"
+example_values = [ "DEM", "", "",]
+
+[P24VOTED]
+internal_field = ""
+field_name = "P24VOTED"
+example_values = [ "2", "20240301", "20240226", "6", "20240225", "20240229", "20240305", "20240228", "20240223", "20240221",]
+
+[P24PLACE]
+internal_field = ""
+field_name = "P24PLACE"
+example_values = [ "454", "366", "280", "410", "220", "363", "347", "401", "354", "173",]
+
+[P24PARTY]
+internal_field = ""
+field_name = "P24PARTY"
+example_values = [ "D", "REP", "DEM", "E", "DEM", "M", "",]
+
+[G23VOTED]
+internal_field = ""
+field_name = "G23VOTED"
+example_values = [ "2", "20231107", "20231026", "20231024", "7", "20231030", "20231025", "1", "20231031", "20231029",]
+
+[G23PLACE]
+internal_field = ""
+field_name = "G23PLACE"
+example_values = [ "2", "454", "114", "450", "395", "366", "220", "113", "250", "436",]
+
+[G23PARTY]
+internal_field = ""
+field_name = "G23PARTY"
+example_values = [ "", "",]
+
+[L23VOTED]
+internal_field = ""
+field_name = "L23VOTED"
+example_values = [ "2", "20230506", "6", "20230502", "20230429", "20230426", "5", "20230428", "0", "3",]
+
+[L23PLACE]
+internal_field = ""
+field_name = "L23PLACE"
+example_values = [ "2", "450", "235", "236", "341", "210", "413", "410", "215", "358",]
+
+[L23PARTY]
+internal_field = ""
+field_name = "L23PARTY"
+example_values = [ "", "",]
+
+[G16VOTED]
+internal_field = ""
+field_name = "G16VOTED"
+example_values = [ "2", "20161029", "20161030", "20161024", "20161026", "6", "20161013", "1", "20161104", "20161010",]
+
+[G16PLACE]
+internal_field = ""
+field_name = "G16PLACE"
+example_values = [ "149", "234", "316", "112", "366", "1", "410", "408", "361", "160",]
+
+[G15VOTED]
+internal_field = ""
+field_name = "G15VOTED"
+example_values = [ "2", "20151029", "1", "20151023", "5", "20151103", "20151026", "4", "0",]
+
+[G15PLACE]
+internal_field = ""
+field_name = "G15PLACE"
+example_values = [ "304", "6", "366", "1", "437", "319", "247", "360", "346", "331",]
+
+[G14VOTED]
+internal_field = ""
+field_name = "G14VOTED"
+example_values = [ "2", "20141030", "20141021", "20141026", "20141022", "1", "20141025", "20141027", "20141020", "3",]
+
+[G14PLACE]
+internal_field = ""
+field_name = "G14PLACE"
+example_values = [ "149", "234", "316", "112", "366", "1", "361", "160", "258", "425",]
+
+[GR13VOTED]
+internal_field = ""
+field_name = "GR13VOTED"
+example_values = [ "2", "20140122", "4", "0", "20140128", "1",]
+
+[GR13PLACE]
+internal_field = ""
+field_name = "GR13PLACE"
+example_values = [ "211", "153", "0", "140", "1",]
+
+[G13VOTED]
+internal_field = ""
+field_name = "G13VOTED"
+example_values = [ "2", "20131022", "20131101", "20131024", "20131021", "20131023", "20131030", "1", "20131105", "0",]
+
+[G13PLACE]
+internal_field = ""
+field_name = "G13PLACE"
+example_values = [ "304", "6", "362", "259", "1", "437", "258", "247", "360", "140",]
+
+[G12VOTED]
+internal_field = ""
+field_name = "G12VOTED"
+example_values = [ "2", "20121024", "20121022", "20121101", "20121030", "1", "20121029", "3", "20121106", "20121027",]
+
+[G11VOTED]
+internal_field = ""
+field_name = "G11VOTED"
+example_values = [ "2", "20111027", "8", "20111024", "20111102", "1", "20111108", "0",]
+
+[GR11VOTED]
+internal_field = ""
+field_name = "GR11VOTED"
+example_values = [ "2", "20110612", "6", "20110614", "1", "20110613", "20110610", "0", "20110618",]
+
+[G10VOTED]
+internal_field = ""
+field_name = "G10VOTED"
+example_values = [ "2", "20101021", "20101023", "20101102", "20101020", "20101027", "6", "20101026", "1", "20101019",]
+
+[GR10VOTED]
+internal_field = ""
+field_name = "GR10VOTED"
+example_values = [ "2", "0", "20100612", "6", "1",]
+
+[G09VOTED]
+internal_field = ""
+field_name = "G09VOTED"
+example_values = [ "2", "20091020", "1", "9", "20091103", "20091027", "0", "3",]
+
+[G08VOTED]
+internal_field = ""
+field_name = "G08VOTED"
+example_values = [ "2", "20081031", "20081030", "1", "20081025", "20081028", "20081029", "20081021", "20081026", "20081027",]
+
+[GR08VOTED]
+internal_field = ""
+field_name = "GR08VOTED"
+example_values = [ "2", "20080614", "8", "6", "3", "0",]
+
+[G07VOTED]
+internal_field = ""
+field_name = "G07VOTED"
+example_values = [ "2", "20071106", "20071024", "7", "20071102", "20071030", "6", "1", "0",]
+
+[GA06VOTED]
+internal_field = ""
+field_name = "GA06VOTED"
+example_values = [ "2", "6", "20060506", "1", "20060513", "5", "20060507", "0", "20060503", "3",]
+
+[PR06VOTED]
+internal_field = ""
+field_name = "PR06VOTED"
+example_values = [ "2", "20060407", "20060403", "6", "1", "4", "0",]
+
+[PR06PARTY]
+internal_field = ""
+field_name = "PR06PARTY"
+example_values = [ "D", "M", "DEM", "E", "REP",]
+
+[GLR6VOTED]
+internal_field = ""
+field_name = "GLR6VOTED"
+example_values = [ "2", "0", "20060214", "4", "6", "1",]
+
+[GL06VOTED]
+internal_field = ""
+field_name = "GL06VOTED"
+example_values = [ "2", "20060117", "0", "7", "6", "1",]
+
+[G05VOTED]
+internal_field = ""
+field_name = "G05VOTED"
+example_values = [ "2", "20051101", "20051103", "20051030", "20051104", "20051028", "1", "5", "20051108", "20051027",]
+
+[GR05VOTED]
+internal_field = ""
+field_name = "GR05VOTED"
+example_values = [ "2", "20050601", "20050527", "6", "20050607", "1", "20050531", "5", "20050611", "0",]
+
+[GA05VOTED]
+internal_field = ""
+field_name = "GA05VOTED"
+example_values = [ "2", "20050429", "20050507", "20050425", "20050427", "20050502", "5", "20050503", "4", "0",]
+
+[G04VOTED]
+internal_field = ""
+field_name = "G04VOTED"
+example_values = [ "2", "20041024", "20041023", "20041029", "20041020", "1", "20041026", "20041025", "20041028", "20041019",]
+
+[G03VOTED]
+internal_field = ""
+field_name = "G03VOTED"
+example_values = [ "2", "20030913", "20030904", "9", "5", "20030909", "0", "3",]
+
+[GR03VOTED]
+internal_field = ""
+field_name = "GR03VOTED"
+example_values = [ "2", "20030607", "20030601", "20030602", "9", "20030529", "5", "20030531", "0", "3",]
+
+[GA03VOTED]
+internal_field = ""
+field_name = "GA03VOTED"
+example_values = [ "2", "20030428", "20030416", "20030429", "20030423", "20030426", "20030424", "5", "20030503", "0",]
+
+[G02VOTED]
+internal_field = ""
+field_name = "G02VOTED"
+example_values = [ "2", "20021019", "20021030", "20021025", "20021021", "1", "20021027", "20021031", "20021105", "20021023",]
+
+[PR02VOTED]
+internal_field = ""
+field_name = "PR02VOTED"
+example_values = [ "2", "20020405", "20020409", "0", "4",]
+
+[PR02PARTY]
+internal_field = ""
+field_name = "PR02PARTY"
+example_values = [ "D", "M", "DEM", "E", "REP",]
+
+[G01VOTED]
+internal_field = ""
+field_name = "G01VOTED"
+example_values = [ "2", "20011030", "1", "20011106", "20011102", "0", "20011027", "3", "20011025",]
+
+[G00VOTED]
+internal_field = ""
+field_name = "G00VOTED"
+example_values = [ "2", "20001103", "20001109", "20001101", "1", "20001022", "20001112", "20001027", "20001021", "20001102",]
+
+[PR00VOTED]
+internal_field = ""
+field_name = "PR00VOTED"
+example_values = [ "2", "20000411", "4", "6", "0",]
+
+[PR00PARTY]
+internal_field = ""
+field_name = "PR00PARTY"
+example_values = [ "D", "DEM", "E", "M",]
+
+[G99VOTED]
+internal_field = ""
+field_name = "G99VOTED"
+example_values = [ "2", "1", "5", "0", "9",]
+
+[G98VOTED]
+internal_field = ""
+field_name = "G98VOTED"
+example_values = [ "2", "8", "1", "0", "9",]
+
+[GC97VOTED]
+internal_field = ""
+field_name = "GC97VOTED"
+example_values = [ "2", "1", "7", "0", "9",]
+
+[GA97VOTED]
+internal_field = ""
+field_name = "GA97VOTED"
+example_values = [ "8", "7", "1", "4", "0", "9",]
+
+[PR96VOTED]
+internal_field = ""
+field_name = "PR96VOTED"
+example_values = [ "6", "9", "1", "19960409", "19960408", "4", "0",]
+
+[PR96PARTY]
+internal_field = ""
+field_name = "PR96PARTY"
+example_values = [ "P", "E", "R", "REP",]
+
+[FORMERNAME]
+internal_field = ""
+field_name = "FORMERNAME"
+example_values = [ "GRILLO", "I", "E", "L", "MOORE", "CRISSY", "V", "O", "R",]
+
+[GEN23]
+internal_field = ""
+field_name = "GEN23"
+example_values = [ "V",]
+
+[GEN22]
+internal_field = ""
+field_name = "GEN22"
+example_values = [ "E", "V", "VE",]
+
+[GEN20]
+internal_field = ""
+field_name = "GEN20"
+example_values = [ "E", "V", "VE",]
+
+[GEN19]
+internal_field = ""
+field_name = "GEN19"
+example_values = [ "E", "V", "VE",]
+
+[GEN18]
+internal_field = ""
+field_name = "GEN18"
+example_values = [ "E", "V", "VE",]
+
+[PRI24]
+internal_field = ""
+field_name = "PRI24"
+example_values = [ "E", "RE", "R",]
+
+[PRI22]
+internal_field = ""
+field_name = "PRI22"
+example_values = [ "E", "RE", "R",]
+
+[PRI20]
+internal_field = ""
+field_name = "PRI20"
+example_values = [ "E", "RE", "R",]
+
+[PRI18]
+internal_field = ""
+field_name = "PRI18"
+example_values = [ "E", "RE", "R",]

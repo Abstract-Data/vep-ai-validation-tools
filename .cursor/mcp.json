@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "logfire": {
+      "command": "uvx",
+      "args": [
+        "logfire-mcp@latest",
+        "--read-token=pylf_v1_us_3f70p28CmTznnnV7wdmpLHJVtz7jxtZqJhLQr0GppFCh"
+      ]
+    }
+  }
+}

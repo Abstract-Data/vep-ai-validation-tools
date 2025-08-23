@@ -7,9 +7,11 @@ import phonenumbers
 from icecream import ic
 from pydantic import BaseModel, Field, field_validator, model_validator
 from pydantic.dataclasses import dataclass as pydantic_dataclass
+from pydantic_ai import Agent
 from pydantic_core import PydanticCustomError
 from tqdm import tqdm
 
+from vep_ai_validation_tools.agents import create_ollama_model
 from vep_ai_validation_tools.renaming import DATA_PATH
 from vep_ai_validation_tools.renaming.toml_reader import TomlReader
 from vep_ai_validation_tools.renaming.validation_cls import ValidationClass
@@ -17,41 +19,47 @@ from vep_ai_validation_tools.renaming.validation_cls import ValidationClass
 # from vep_validation_tools.agentic.ai_utils import NewAIModel, DataQualityAssessment, ModelComponents
 
 # TODO: Figure out how to ge the fields to quit overwriting validation dumps, specifically on contact phone fields.
-STATE_VOTERFILES = [
-    Path("/Users/johneakin/PyCharmProjects/state-voterfiles/data"),
-    Path(
-        "/Users/johneakin/PyCharmProjects/vep-2024/data/voterfiles/texas/texasnovember2024.csv"
-    ),
-]
+# STATE_VOTERFILES = [
+#     Path("/Users/johneakin/PyCharmProjects/state-voterfiles/data"),
+#     Path(
+#         "/Users/johneakin/PyCharmProjects/vep-2024/data/voterfiles/texas/texasnovember2024.csv"
+#     ),
+# ]
 
-ALL_VOTERFILES = []
-for vf_file in STATE_VOTERFILES:
-    if vf_file.is_dir():
-        for state_folder in vf_file.iterdir():
-            if state_folder.is_dir():
-                for data_folder in state_folder.iterdir():
-                    if data_folder.is_dir():
-                        for file_type_folder in data_folder.iterdir():
-                            if (
-                                file_type_folder.is_file()
-                                and file_type_folder.suffix == ".csv"
-                            ):
-                                ALL_VOTERFILES.append(Path(file_type_folder))
-                    elif data_folder.is_file() and data_folder.suffix == ".csv":
-                        ALL_VOTERFILES.append(Path(data_folder))
-            elif state_folder.is_file() and state_folder.suffix == ".csv":
-                ALL_VOTERFILES.append(Path(state_folder))
-    elif vf_file.is_file() and vf_file.suffix == ".csv":
-        ALL_VOTERFILES.append(Path(vf_file))
+# ALL_VOTERFILES = []
+# for vf_file in STATE_VOTERFILES:
+#     p = Path(vf_file)
+#     if p.is_file() and p.suffix == ".csv":
+#         ALL_VOTERFILES.append(p)
+#     elif p.is_dir():
+#         # Recursively find all .csv files at any depth under this folder
+#         ALL_VOTERFILES.extend(p.rglob("*.csv"))
 
-file_headers = dict()
-for file in ALL_VOTERFILES:
-    file_headers[file.name] = set()
-    with file.open("r", encoding="utf-8-sig") as f:
-        reader = DictReader(f)
-        for row in tqdm(reader, desc=f"Processing {file.name}"):
-            file_headers[file.name].update(row.keys())
-ic(file_headers)
+# file_headers = dict()
+# for file in ALL_VOTERFILES:
+#     file_headers[file.name] = dict()
+#     with file.open("r", encoding="utf-8-sig") as f:
+#         reader = DictReader(f)
+#         for row in tqdm(reader, desc=f"Processing {file.name}"):
+#             for key, value in row.items():
+#                 if not file_headers[file.name].get(key):
+#                     file_headers[file.name][key] = set(value)
+#                 if len(file_headers[file.name].get(key)) < 10:
+#                     file_headers[file.name][key].add(value)
+
+# combined_headers = dict()
+# for file in file_headers:
+#     combined_headers
+
+
+# ollama_model = create_ollama_model()
+# column_guesser_agent = Agent(
+#     ollama_model,
+#     output_type=dict,
+#     system_prompt="""
+#     You are a column guesser for state voter registration files. You will receive a list of column names and a list of values.
+#     You will need to guess the column name based on the values. As a dictionary, return the column name as the key and the values as the value.
+#     """)
 
 
 @pydantic_dataclass

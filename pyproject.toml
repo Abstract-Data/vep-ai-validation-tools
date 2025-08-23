@@ -26,12 +26,15 @@ classifiers = [
 ]
 dependencies = [
     "icecream>=2.1.5",
+    "pandas>=2.3.2",
     "phonenumbers>=9.0.11",
     # Add your project dependencies here
+    "psycopg2>=2.9.10",
     "pydantic>=2.9.2",
     "pydantic-ai[eval,logfire,mcp]>=0.6.2",
     "pydantic-graph>=0.6.2",
     "rapidfuzz>=3.13.0",
+    "sqlmodel>=0.0.24",
     "toml>=0.10.2",
     "tomli>=2.2.1",
     "usaddress>=0.5.16",

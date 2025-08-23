@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from itertools import chain
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
@@ -11,9 +12,9 @@ from pydantic import Field as PydanticField
 from pydantic import create_model, model_validator
 from pydantic_ai import Agent
 from pydantic_ai.models.openai import OpenAIModel
-from pydantic_ai.providers.openai import OpenAIProvider
 from pydantic_ai.settings import ModelSettings
 
+from ..agents.base import OllamaProvider
 from . import DATA_PATH
 from .renaming_funcs import AgenticValidationFuncs as AVF
 
@@ -52,7 +53,7 @@ class FieldDefinitionCreator:
 
 ollama_model = OpenAIModel(
     model_name="llama3.2",
-    provider=OpenAIProvider(base_url="http://localhost:11434/v1"),
+    provider=OllamaProvider(base_url="http://localhost:11434/v1"),
     settings=ModelSettings(temperature=0.1, max_retries=5),
 )
 rename_agent = Agent(
@@ -63,7 +64,12 @@ rename_agent = Agent(
     Write a single sentence (max 200 characters) that clearly identifies what this field contains.
     Do not use phrases like 'The field represents', 'Here is a description', or 'This field contains'.
     Instead, directly describe the content. For example: 'Voter identification number' instead of 'The field represents the voter identification number'.
-    Use the {key} for context to help create an accurate description for the field level (like state, county, city, etc.)""",
+    Use the field name for context to help create an accurate description for the field level (like state, county, city, etc.)
+
+    Return a FieldReferenceInfo object with:
+    - field_name: the original field name
+    - field_description: a concise description of what this field contains
+    - field_possible_values: list of possible values for this field""",
 )
 
 
@@ -175,25 +181,36 @@ class FieldManager:
                     if rename_agent:
                         try:
                             result = rename_agent.run_sync(f"Key: {k}, Values: {v}")
-                            field_definition_toml[k] = result.output
-                            DEFINITIONS[k] = FieldReferenceInfo(
-                                field_name=k,
-                                field_description=field_definition_toml[k],
-                                field_possible_values=(
-                                    [str(val) for val in v]
-                                    if isinstance(v, list)
-                                    else [str(v)]
-                                ),
-                            )
+                            # The agent should return a FieldReferenceInfo object
+                            if hasattr(result.output, "field_description"):
+                                DEFINITIONS[k] = result.output
+                                field_definition_toml[k] = (
+                                    result.output.field_description
+                                )
+                            else:
+                                # Fallback if the agent didn't return the expected structure
+                                DEFINITIONS[k] = FieldReferenceInfo(
+                                    field_name=k,
+                                    field_description=str(result.output),
+                                    field_possible_values=(
+                                        [str(val) for val in v]
+                                        if isinstance(v, list)
+                                        else [str(v)]
+                                    ),
+                                )
+                                field_definition_toml[k] = DEFINITIONS[
+                                    k
+                                ].field_description
                             logfire.info(
                                 f"AI definition for {k}: {DEFINITIONS[k].field_description}"
                             )
                         except Exception as e:
                             logfire.error(f"AI failed for {k}: {e}")
-                            field_definition_toml[k] = (
+                            fallback = (
                                 FieldDefinitionCreator.create_fallback_definition(k, v)
                             )
-                            DEFINITIONS[k] = field_definition_toml[k]
+                            field_definition_toml[k] = fallback.field_description
+                            DEFINITIONS[k] = fallback
                     else:
                         field_definition_toml[k] = (
                             FieldDefinitionCreator.create_fallback_definition(k, v)

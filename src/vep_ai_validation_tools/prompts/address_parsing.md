@@ -63,42 +63,13 @@ Input: {"mail_address1": "129 OAKLAND", "mail_city": "PALESTINE", "mail_state": 
 Output:
 
 ```json
-{
-  "mailing_fields": [
-    {
-      "field_name": "mail_address1",
-      "address_type": "mailing",
-      "component": "address1",
-      "field_value": "129 OAKLAND",
-      "confidence": 0.95
-    },
-    {
-      "field_name": "mail_city",
-      "address_type": "mailing",
-      "component": "city",
-      "field_value": "PALESTINE",
-      "confidence": 0.95
-    },
-    {
-      "field_name": "mail_state",
-      "address_type": "mailing",
-      "component": "state",
-      "field_value": "TX",
-      "confidence": 0.95
-    },
-    {
-      "field_name": "mail_zip5",
-      "address_type": "mailing",
-      "component": "zip5",
-      "field_value": "75801",
-      "confidence": 0.95
-    }
-  ],
-  "residence_fields": [],
-  "parsing_errors": [],
-  "total_fields_processed": 4,
-  "successfully_parsed": 4
-}
-```
-
+[
+  {
+    "field_name": "mail_address1"
+    "field_description": "The description of the field"
+    "field_possible_values": ["address1", "adr1", ...]
+    "confidence": 0.95
+  }
+]
 **CRITICAL: Always return the exact JSON structure above. Do not add extra fields or change the format.**
+```

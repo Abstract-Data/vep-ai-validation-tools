@@ -21,7 +21,8 @@ from .graph import (
 # Import main functionality
 from .models import CompleteVoterRecord, VoterProcessingState
 
-logfire.configure()
+logfire.configure(service_name="vep-ai-validation-tools")
+logfire.instrument_pydantic_ai()
 
 __all__ = [
     "__version__",

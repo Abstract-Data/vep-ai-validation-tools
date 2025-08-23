@@ -1,241 +1,241 @@
 [contact_phone_unknown1]
 field_name = "contact_phone_unknown1"
-description = "DESCRIPTION NEEDED FORcontact_phone_unknown1"
+description = "Phone number"
 possible_values = [ "PHONE_NO", "PHONENUMBER",]
 
 [district_city_council_district]
 field_name = "district_city_council_district"
-description = "DESCRIPTION NEEDED FORdistrict_city_council_district"
+description = "City council district number"
 possible_values = [ "DIST19",]
 
 [district_city_incorporation]
 field_name = "district_city_incorporation"
-description = "DESCRIPTION NEEDED FORdistrict_city_incorporation"
+description = "City incorporation status"
 possible_values = [ "INCORPORATION",]
 
 [district_city_limits]
 field_name = "district_city_limits"
-description = "DESCRIPTION NEEDED FORdistrict_city_limits"
+description = "City limits of a district"
 possible_values = [ "CITY_LIMITS",]
 
 [district_city_municipality]
 field_name = "district_city_municipality"
-description = "DESCRIPTION NEEDED FORdistrict_city_municipality"
-possible_values = [ "MUNICIPALITY", "DIST05",]
+description = "City or municipality name"
+possible_values = [ "DIST05", "MUNICIPALITY",]
 
 [district_city_name]
 field_name = "district_city_name"
-description = "DESCRIPTION NEEDED FORdistrict_city_name"
+description = "City in a US congressional district"
 possible_values = [ "CITY",]
 
 [district_city_school_district]
 field_name = "district_city_school_district"
-description = "DESCRIPTION NEEDED FORdistrict_city_school_district"
+description = "City of a school district"
 possible_values = [ "CITY_SCHOOL_DISTRICT",]
 
 [district_county_career_center]
 field_name = "district_county_career_center"
-description = "DESCRIPTION NEEDED FORdistrict_county_career_center"
+description = "Location of a career center"
 possible_values = [ "CAREER_CENTER",]
 
 [district_county_commissioner_precinct]
 field_name = "district_county_commissioner_precinct"
-description = "DESCRIPTION NEEDED FORdistrict_county_commissioner_precinct"
+description = "Precinct number within a commissioner district"
 possible_values = [ "DIST04",]
 
 [district_county_community_college]
 field_name = "district_county_community_college"
-description = "DESCRIPTION NEEDED FORdistrict_county_community_college"
+description = "School level"
 possible_values = [ "DIST18",]
 
 [district_county_constable_precinct]
 field_name = "district_county_constable_precinct"
-description = "DESCRIPTION NEEDED FORdistrict_county_constable_precinct"
+description = "Precinct within a district where a constable is elected."
 possible_values = [ "DIST06",]
 
 [district_county_district_attorney]
 field_name = "district_county_district_attorney"
-description = "DESCRIPTION NEEDED FORdistrict_county_district_attorney"
+description = "Office of the District Attorney at the county level"
 possible_values = [ "DISTRICT ATTORNEY",]
 
 [district_county_education_service_center]
 field_name = "district_county_education_service_center"
-description = "DESCRIPTION NEEDED FORdistrict_county_education_service_center"
+description = "Name of the education service center at the county level"
 possible_values = [ "EDU_SERVICE_CENTER_DISTRICT",]
 
 [district_county_exempted_village_school_district]
 field_name = "district_county_exempted_village_school_district"
-description = "DESCRIPTION NEEDED FORdistrict_county_exempted_village_school_district"
+description = "Village school district status"
 possible_values = [ "EXEMPTED_VILL_SCHOOL_DISTRICT",]
 
 [district_county_first_class_school]
 field_name = "district_county_first_class_school"
-description = "DESCRIPTION NEEDED FORdistrict_county_first_class_school"
+description = "School level"
 possible_values = [ "FIRST CLASS SCHOOL",]
 
 [district_county_id]
 field_name = "district_county_id"
-description = "DESCRIPTION NEEDED FORdistrict_county_id"
+description = "County ID"
 possible_values = [ "COUNTY_ID",]
 
 [district_county_library_district]
 field_name = "district_county_library_district"
-description = "DESCRIPTION NEEDED FORdistrict_county_library_district"
+description = "Library district"
 possible_values = [ "LIBRARY",]
 
 [district_county_local_school_district]
 field_name = "district_county_local_school_district"
-description = "DESCRIPTION NEEDED FORdistrict_county_local_school_district"
+description = "Local school district name"
 possible_values = [ "LOCAL_SCHOOL_DISTRICT",]
 
 [district_county_mass_transit_authority]
 field_name = "district_county_mass_transit_authority"
-description = "DESCRIPTION NEEDED FORdistrict_county_mass_transit_authority"
+description = "Mass transit authority at the state or local level"
 possible_values = [ "DIST12",]
 
 [district_county_name]
 field_name = "district_county_name"
-description = "DESCRIPTION NEEDED FORdistrict_county_name"
+description = "County name"
 possible_values = [ "COUNTY",]
 
 [district_county_number]
 field_name = "district_county_number"
-description = "DESCRIPTION NEEDED FORdistrict_county_number"
+description = "County identifier"
 possible_values = [ "COUNTY_NUMBER", "CURRENT_COUNTY",]
 
 [district_county_representational_school]
 field_name = "district_county_representational_school"
-description = "DESCRIPTION NEEDED FORdistrict_county_representational_school"
+description = "Type of school"
 possible_values = [ "REPRESENTATIONAL SCHOOL",]
 
 [district_county_sanitary]
 field_name = "district_county_sanitary"
-description = "DESCRIPTION NEEDED FORdistrict_county_sanitary"
+description = "Type of sanitary district"
 possible_values = [ "SANITARY",]
 
 [district_county_school]
 field_name = "district_county_school"
-description = "DESCRIPTION NEEDED FORdistrict_county_school"
+description = "School district or county name"
 possible_values = [ "SCHOOL",]
 
 [district_county_school_district]
 field_name = "district_county_school_district"
-description = "DESCRIPTION NEEDED FORdistrict_county_school_district"
+description = "School district name"
 possible_values = [ "DIST07",]
 
 [district_county_sub_school_district]
 field_name = "district_county_sub_school_district"
-description = "DESCRIPTION NEEDED FORdistrict_county_sub_school_district"
+description = "School district level"
 possible_values = [ "DIST08",]
 
 [district_county_supervisory]
 field_name = "district_county_supervisory"
-description = "DESCRIPTION NEEDED FORdistrict_county_supervisory"
+description = "Supervisory district at the county level"
 possible_values = [ "COUNTY SUPERVISORY",]
 
 [district_county_technical_college]
 field_name = "district_county_technical_college"
-description = "DESCRIPTION NEEDED FORdistrict_county_technical_college"
+description = "Type of institution"
 possible_values = [ "TECHNICAL COLLEGE",]
 
 [district_county_township]
 field_name = "district_county_township"
-description = "DESCRIPTION NEEDED FORdistrict_county_township"
+description = "Voter registration locality - TOWNSHIP"
 possible_values = [ "TOWNSHIP",]
 
 [district_county_village]
 field_name = "district_county_village"
-description = "DESCRIPTION NEEDED FORdistrict_county_village"
+description = "Village name"
 possible_values = [ "VILLAGE",]
 
 [district_county_ward]
 field_name = "district_county_ward"
-description = "DESCRIPTION NEEDED FORdistrict_county_ward"
-possible_values = [ "ward", "WARD",]
+description = "Local government division"
+possible_values = [ "WARD", "ward",]
 
 [district_county_water_district_01]
 field_name = "district_county_water_district_01"
-description = "DESCRIPTION NEEDED FORdistrict_county_water_district_01"
+description = "Water district level 1"
 possible_values = [ "DIST11",]
 
 [district_county_water_district_02]
 field_name = "district_county_water_district_02"
-description = "DESCRIPTION NEEDED FORdistrict_county_water_district_02"
+description = "Water district level 2"
 possible_values = [ "DIST13",]
 
 [district_court_appeallate]
 field_name = "district_court_appeallate"
-description = "DESCRIPTION NEEDED FORdistrict_court_appeallate"
+description = "Court level"
 possible_values = [ "COURT_OF_APPEALS",]
 
 [district_court_county]
 field_name = "district_court_county"
-description = "DESCRIPTION NEEDED FORdistrict_court_county"
+description = "Court county name"
 possible_values = [ "COUNTY_COURT_DISTRICT",]
 
 [district_court_municipal]
 field_name = "district_court_municipal"
-description = "DESCRIPTION NEEDED FORdistrict_court_municipal"
+description = "Court level within a municipality"
 possible_values = [ "MUNICIPAL_COURT_DISTRICT",]
 
 [district_federal_congressional]
 field_name = "district_federal_congressional"
-description = "DESCRIPTION NEEDED FORdistrict_federal_congressional"
-possible_values = [ "NEWCD", "DIST01", "CONGRESSIONAL", "CONGRESSIONAL_DISTRICT", "CONGRESS_DISTRICT",]
+description = "US Congressional district number or abbreviation"
+possible_values = [ "NEWCD", "CONGRESS_DISTRICT", "CONGRESSIONAL", "CONGRESSIONAL_DISTRICT", "DIST01",]
 
 [district_state]
 field_name = "district_state"
-description = "DESCRIPTION NEEDED FORdistrict_state"
+description = "State or county where a voter is registered."
 possible_values = [ "STATE",]
 
 [district_state_board_of_education]
 field_name = "district_state_board_of_education"
-description = "DESCRIPTION NEEDED FORdistrict_state_board_of_education"
+description = "State board of education for a school district"
 possible_values = [ "DIST16", "STATE_BOARD_OF_EDUCATION",]
 
 [district_state_circuit_court]
 field_name = "district_state_circuit_court"
-description = "DESCRIPTION NEEDED FORdistrict_state_circuit_court"
+description = "Court level (e.g. CIRCUIT COURT)"
 possible_values = [ "CIRCUIT COURT",]
 
 [district_state_court_of_appeals]
 field_name = "district_state_court_of_appeals"
-description = "DESCRIPTION NEEDED FORdistrict_state_court_of_appeals"
+description = "Court level"
 possible_values = [ "COURT OF APPEALS",]
 
 [district_state_district_combo]
 field_name = "district_state_district_combo"
-description = "DESCRIPTION NEEDED FORdistrict_state_district_combo"
+description = "State and county combination"
 possible_values = [ "DISTRICTCOMBO",]
 
 [district_state_juristidction]
 field_name = "district_state_juristidction"
-description = "DESCRIPTION NEEDED FORdistrict_state_juristidction"
+description = "State or local government jurisdiction"
 possible_values = [ "JURISDICTION",]
 
 [district_state_legislative_lower]
 field_name = "district_state_legislative_lower"
-description = "DESCRIPTION NEEDED FORdistrict_state_legislative_lower"
-possible_values = [ "HOUSE_DISTRICT", "STATE_REPRESENTATIVE_DISTRICT", "DIST03", "NEWHD",]
+description = "State legislative district number"
+possible_values = [ "STATE_REPRESENTATIVE_DISTRICT", "NEWHD", "HOUSE_DISTRICT", "DIST03",]
 
 [district_state_legislative_upper]
 field_name = "district_state_legislative_upper"
-description = "DESCRIPTION NEEDED FORdistrict_state_legislative_upper"
-possible_values = [ "STATE_SENATE_DISTRICT", "DIST02", "SENATE_DISTRICT", "NEWSD",]
+description = "State legislative district number"
+possible_values = [ "NEWSD", "SENATE_DISTRICT", "DIST02", "STATE_SENATE_DISTRICT",]
 
 [district_state_lower]
 field_name = "district_state_lower"
-description = "DESCRIPTION NEEDED FORdistrict_state_lower"
+description = "State assembly district name"
 possible_values = [ "STATE ASSEMBLY",]
 
 [district_state_multijurisdictional_judge]
 field_name = "district_state_multijurisdictional_judge"
-description = "DESCRIPTION NEEDED FORdistrict_state_multijurisdictional_judge"
+description = "District judge in a multi-jurisdictional state"
 possible_values = [ "MULTI-JURISDICTIONAL JUDGE",]
 
 [district_state_upper]
 field_name = "district_state_upper"
-description = "DESCRIPTION NEEDED FORdistrict_state_upper"
+description = "State legislative district"
 possible_values = [ "STATE SENATE",]
 
 [file_origin]
@@ -245,315 +245,315 @@ possible_values = [ "FILE_ORIGIN",]
 
 [mail_address1]
 field_name = "mail_address1"
-description = "DESCRIPTION NEEDED FORmail_address1"
-possible_values = [ "MAILING_ADDRESS1", "MA_ADDR_LINE_1", "MLADD1", "MAILINGADDRESS1", "MADR1",]
+description = " mailing address line 1"
+possible_values = [ "MA_ADDR_LINE_1", "MAILING_ADDRESS1", "MLADD1", "MADR1", "MAILINGADDRESS1",]
 
 [mail_address2]
 field_name = "mail_address2"
-description = "DESCRIPTION NEEDED FORmail_address2"
-possible_values = [ "MAILINGADDRESS2", "MAILING_SECONDARY_ADDRESS", "MLADD2", "MADR2",]
+description = " mailing secondary address"
+possible_values = [ "MAILINGADDRESS2", "MLADD2", "MAILING_SECONDARY_ADDRESS", "MADR2",]
 
 [mail_change_date]
 field_name = "mail_change_date"
-description = "DESCRIPTION NEEDED FORmail_change_date"
+description = "Date of last address change"
 possible_values = [ "MCHGDT",]
 
 [mail_city]
 field_name = "mail_city"
-description = "DESCRIPTION NEEDED FORmail_city"
-possible_values = [ "MAILING_CITY", "MAILINGCITYSTATEZIP", "MA_CITY", "MCITY", "MLCITY",]
+description = "City name for mailing purposes"
+possible_values = [ "MA_CITY", "MCITY", "MLCITY", "MAILINGCITYSTATEZIP", "MAILING_CITY",]
 
 [mail_country]
 field_name = "mail_country"
-description = "DESCRIPTION NEEDED FORmail_country"
-possible_values = [ "MLCTRY", "MAILING_COUNTRY",]
+description = "Country of mailing address"
+possible_values = [ "MAILING_COUNTRY", "MLCTRY",]
 
 [mail_postal_code]
 field_name = "mail_postal_code"
-description = "DESCRIPTION NEEDED FORmail_postal_code"
+description = "Postal code of a mailing address"
 possible_values = [ "MAILING_POSTAL_CODE",]
 
 [mail_standardized]
 field_name = "mail_standardized"
-description = "DESCRIPTION NEEDED FORmail_standardized"
+description = " mailing address"
 possible_values = [ "MAILINGADDRESS",]
 
 [mail_state]
 field_name = "mail_state"
-description = "DESCRIPTION NEEDED FORmail_state"
-possible_values = [ "MST", "MLSTAT", "MA_STATE", "MAILING_STATE",]
+description = "State or region where voter is registered"
+possible_values = [ "MLSTAT", "MST", "MAILING_STATE", "MA_STATE",]
 
 [mail_zip4]
 field_name = "mail_zip4"
-description = "DESCRIPTION NEEDED FORmail_zip4"
-possible_values = [ "MA_ZIP_PLUS", "MZIP+4", "MAILING_ZIP_PLUS4",]
+description = "US ZIP code with 4 digits"
+possible_values = [ "MAILING_ZIP_PLUS4", "MZIP+4", "MA_ZIP_PLUS",]
 
 [mail_zip5]
 field_name = "mail_zip5"
-description = "DESCRIPTION NEEDED FORmail_zip5"
-possible_values = [ "MA_ZIP_CODE", "MZIP", "MLZIPCD", "MAILING_ZIP",]
+description = "US mailing zip code"
+possible_values = [ "MA_ZIP_CODE", "MAILING_ZIP", "MLZIPCD", "MZIP",]
 
 [person_dob]
 field_name = "person_dob"
-description = "DESCRIPTION NEEDED FORperson_dob"
-possible_values = [ "DATE_OF_BIRTH", "DOB",]
+description = "Date of birth"
+possible_values = [ "DOB", "DATE_OF_BIRTH",]
 
 [person_gender]
 field_name = "person_gender"
-description = "DESCRIPTION NEEDED FORperson_gender"
+description = "Gender type"
 possible_values = [ "GENDER", "SEX",]
 
 [person_name_first]
 field_name = "person_name_first"
-description = "DESCRIPTION NEEDED FORperson_name_first"
-possible_values = [ "FIRST_NAME", "FSTNAM", "FIRSTNAME", "FNAME",]
+description = "First name of a person"
+possible_values = [ "FNAME", "FIRST_NAME", "FSTNAM", "FIRSTNAME",]
 
 [person_name_last]
 field_name = "person_name_last"
-description = "DESCRIPTION NEEDED FORperson_name_last"
-possible_values = [ "LSTNAM", "LAST_NAME", "LNAME", "LASTNAME",]
+description = "Last name of a person"
+possible_values = [ "LNAME", "LAST_NAME", "LASTNAME", "LSTNAM",]
 
 [person_name_middle]
 field_name = "person_name_middle"
-description = "DESCRIPTION NEEDED FORperson_name_middle"
-possible_values = [ "MIDDLE_NAME", "MNAME", "MIDDLENAME", "MIDNAM",]
+description = "Middle name of a person"
+possible_values = [ "MIDNAM", "MIDDLE_NAME", "MIDDLENAME", "MNAME",]
 
 [person_name_prefix]
 field_name = "person_name_prefix"
-description = "DESCRIPTION NEEDED FORperson_name_prefix"
+description = "Prefix of a person's name"
 possible_values = [ "NAMPFX",]
 
 [person_name_suffix]
 field_name = "person_name_suffix"
-description = "DESCRIPTION NEEDED FORperson_name_suffix"
+description = "Suffix of a person's name"
 possible_values = [ "SUFFIX", "SFX",]
 
 [residence_address1]
 field_name = "residence_address1"
-description = "DESCRIPTION NEEDED FORresidence_address1"
-possible_values = [ "RESIDENTIAL_ADDRESS1", "ADDRESS1",]
+description = "Residential street address"
+possible_values = [ "ADDRESS1", "RESIDENTIAL_ADDRESS1",]
 
 [residence_address2]
 field_name = "residence_address2"
-description = "DESCRIPTION NEEDED FORresidence_address2"
-possible_values = [ "RESIDENTIAL_SECONDARY_ADDR", "ADDRESS2",]
+description = "Street address or PO box of secondary home"
+possible_values = [ "ADDRESS2", "RESIDENTIAL_SECONDARY_ADDR",]
 
 [residence_address_id]
 field_name = "residence_address_id"
-description = "DESCRIPTION NEEDED FORresidence_address_id"
+description = "Unique identifier for a residence address"
 possible_values = [ "ADDRID",]
 
 [residence_city]
 field_name = "residence_city"
-description = "DESCRIPTION NEEDED FORresidence_city"
-possible_values = [ "RESIDENTIAL_CITY", "ADDRESSCITY",]
+description = "City of residence"
+possible_values = [ "ADDRESSCITY", "RESIDENTIAL_CITY",]
 
 [residence_country]
 field_name = "residence_country"
-description = "DESCRIPTION NEEDED FORresidence_country"
+description = "Country of residence"
 possible_values = [ "RESIDENTIAL_COUNTRY",]
 
 [residence_effective_date]
 field_name = "residence_effective_date"
-description = "DESCRIPTION NEEDED FORresidence_effective_date"
+description = "Date of effective residency"
 possible_values = [ "REFDAT",]
 
 [residence_part_city]
 field_name = "residence_part_city"
-description = "DESCRIPTION NEEDED FORresidence_part_city"
-possible_values = [ "RCITY", "RA_CITY", "RSCITY",]
+description = "City in state abbreviation format"
+possible_values = [ "RA_CITY", "RSCITY", "RCITY",]
 
 [residence_part_house_direction]
 field_name = "residence_part_house_direction"
-description = "DESCRIPTION NEEDED FORresidence_part_house_direction"
+description = "Direction of the house part at a residence"
 possible_values = [ "RA_STDIR_CODE",]
 
 [residence_part_house_number]
 field_name = "residence_part_house_number"
-description = "DESCRIPTION NEEDED FORresidence_part_house_number"
+description = "House number of a part of a residence"
 possible_values = [ "RA_HS_NUM",]
 
 [residence_part_number]
 field_name = "residence_part_number"
-description = "DESCRIPTION NEEDED FORresidence_part_number"
+description = "Residence part number"
 possible_values = [ "RHNUM",]
 
 [residence_part_number_suffix]
 field_name = "residence_part_number_suffix"
-description = "DESCRIPTION NEEDED FORresidence_part_number_suffix"
+description = "Type of suffix used in residence part numbers"
 possible_values = [ "RDESIG",]
 
 [residence_part_state]
 field_name = "residence_part_state"
-description = "DESCRIPTION NEEDED FORresidence_part_state"
-possible_values = [ "RA_STATE", "RSTATE",]
+description = "State of residence"
+possible_values = [ "RSTATE", "RA_STATE",]
 
 [residence_part_street_direction]
 field_name = "residence_part_street_direction"
-description = "DESCRIPTION NEEDED FORresidence_part_street_direction"
+description = "Direction of street at residence part"
 possible_values = [ "STRDIR",]
 
 [residence_part_street_name]
 field_name = "residence_part_street_name"
-description = "DESCRIPTION NEEDED FORresidence_part_street_name"
-possible_values = [ "RA_STREET_NAME", "STRNAM", "RSTNAME",]
+description = "Street name at a residence"
+possible_values = [ "STRNAM", "RA_STREET_NAME", "RSTNAME",]
 
 [residence_part_street_number]
 field_name = "residence_part_street_number"
-description = "DESCRIPTION NEEDED FORresidence_part_street_number"
+description = "Street number of a residence"
 possible_values = [ "BLKNUM",]
 
 [residence_part_street_post_type]
 field_name = "residence_part_street_post_type"
-description = "DESCRIPTION NEEDED FORresidence_part_street_post_type"
+description = "Type of street address suffix"
 possible_values = [ "RSTSFX",]
 
 [residence_part_street_pre_directional]
 field_name = "residence_part_street_pre_directional"
-description = "DESCRIPTION NEEDED FORresidence_part_street_pre_directional"
+description = "Street name before a directional suffix (e.g. 'Main St' before 'N')"
 possible_values = [ "STRPRE",]
 
 [residence_part_street_suffix]
 field_name = "residence_part_street_suffix"
-description = "DESCRIPTION NEEDED FORresidence_part_street_suffix"
+description = "Street suffix (e.g. ST, AVE, RD)"
 possible_values = [ "RA_STDIR_CODE_POST",]
 
 [residence_part_street_type]
 field_name = "residence_part_street_type"
-description = "DESCRIPTION NEEDED FORresidence_part_street_type"
-possible_values = [ "STRTYP", "RSTTYPE", "RA_STTYPE",]
+description = "Street type at a residential address"
+possible_values = [ "STRTYP", "RA_STTYPE", "RSTTYPE",]
 
 [residence_part_unit_number]
 field_name = "residence_part_unit_number"
-description = "DESCRIPTION NEEDED FORresidence_part_unit_number"
-possible_values = [ "RA_UNIT_NUM", "UNITNO", "RUNUM",]
+description = "Residence part unit number"
+possible_values = [ "RUNUM", "RA_UNIT_NUM", "UNITNO",]
 
 [residence_part_unit_type]
 field_name = "residence_part_unit_type"
-description = "DESCRIPTION NEEDED FORresidence_part_unit_type"
-possible_values = [ "UNITYP", "RA_UTYP_CODE", "RUTYPE",]
+description = "Type of residence part unit"
+possible_values = [ "RUTYPE", "RA_UTYP_CODE", "UNITYP",]
 
 [residence_part_zip4]
 field_name = "residence_part_zip4"
-description = "DESCRIPTION NEEDED FORresidence_part_zip4"
+description = "US Zip Code (Zip + 4)"
 possible_values = [ "RZIP+4",]
 
 [residence_part_zip5]
 field_name = "residence_part_zip5"
-description = "DESCRIPTION NEEDED FORresidence_part_zip5"
-possible_values = [ "RZIP", "RA_ZIP_CODE", "RZIPCD",]
+description = "US Zip Code"
+possible_values = [ "RZIPCD", "RA_ZIP_CODE", "RZIP",]
 
 [residence_parts_house_number]
 field_name = "residence_parts_house_number"
-description = "DESCRIPTION NEEDED FORresidence_parts_house_number"
+description = "House number"
 possible_values = [ "HOUSENUMBER",]
 
 [residence_parts_street_name]
 field_name = "residence_parts_street_name"
-description = "DESCRIPTION NEEDED FORresidence_parts_street_name"
+description = "Street name of a residence"
 possible_values = [ "STREETNAME",]
 
 [residence_parts_unit_number]
 field_name = "residence_parts_unit_number"
-description = "DESCRIPTION NEEDED FORresidence_parts_unit_number"
+description = "Apartment or unit number"
 possible_values = [ "UNITNUMBER",]
 
 [residence_parts_unit_type]
 field_name = "residence_parts_unit_type"
-description = "DESCRIPTION NEEDED FORresidence_parts_unit_type"
+description = "Type of unit in a residence"
 possible_values = [ "UNITTYPE",]
 
 [residence_postal_code]
 field_name = "residence_postal_code"
-description = "DESCRIPTION NEEDED FORresidence_postal_code"
+description = "Postal code of a residential address"
 possible_values = [ "RESIDENTIAL_POSTALCODE",]
 
 [residence_standardized]
 field_name = "residence_standardized"
-description = "DESCRIPTION NEEDED FORresidence_standardized"
+description = "Street address of the voter"
 possible_values = [ "RESIDENCEADDRESS",]
 
 [residence_state]
 field_name = "residence_state"
-description = "DESCRIPTION NEEDED FORresidence_state"
+description = "State where voter resides"
 possible_values = [ "RESIDENTIAL_STATE", "ADDRESSSTATE",]
 
 [residence_zip4]
 field_name = "residence_zip4"
-description = "DESCRIPTION NEEDED FORresidence_zip4"
+description = "US Zip Code plus 4 digit extension"
 possible_values = [ "RESIDENTIAL_ZIP_PLUS4",]
 
 [residence_zip5]
 field_name = "residence_zip5"
-description = "DESCRIPTION NEEDED FORresidence_zip5"
+description = "US Zip Code"
 possible_values = [ "RESIDENTIAL_ZIP", "ADDRESSZIP",]
 
 [voter_absentee]
 field_name = "voter_absentee"
-description = "DESCRIPTION NEEDED FORvoter_absentee"
+description = "Absentee voting status"
 possible_values = [ "ABSENTEE",]
 
 [voter_county]
 field_name = "voter_county"
-description = "DESCRIPTION NEEDED FORvoter_county"
+description = "County where a person is registered to vote"
 possible_values = [ "COUNTY",]
 
 [voter_political_party]
 field_name = "voter_political_party"
-description = "DESCRIPTION NEEDED FORvoter_political_party"
+description = "Voter political party affiliation"
 possible_values = [ "PARTY_AFFILIATION",]
 
 [voter_precinct_code]
 field_name = "voter_precinct_code"
-description = "DESCRIPTION NEEDED FORvoter_precinct_code"
+description = "Precinct code"
 possible_values = [ "PCTCOD",]
 
 [voter_precinct_name]
 field_name = "voter_precinct_name"
-description = "DESCRIPTION NEEDED FORvoter_precinct_name"
-possible_values = [ "PRECINCT", "PCTNAME", "PRECINCT_NAME",]
+description = "Voter precinct name or number"
+possible_values = [ "PRECINCT", "PRECINCT_NAME", "PCTNAME",]
 
 [voter_precinct_number]
 field_name = "voter_precinct_number"
-description = "DESCRIPTION NEEDED FORvoter_precinct_number"
-possible_values = [ "PRECINCT_CODE", "PREC_CODE", "PCT",]
+description = "Voter precinct number (e.g. state, county, city)"
+possible_values = [ "PREC_CODE", "PCT", "PRECINCT_CODE",]
 
 [voter_precinct_split]
 field_name = "voter_precinct_split"
-description = "DESCRIPTION NEEDED FORvoter_precinct_split"
+description = "Voter precinct split"
 possible_values = [ "PCTSPT",]
 
 [voter_registration_application_source]
 field_name = "voter_registration_application_source"
-description = "DESCRIPTION NEEDED FORvoter_registration_application_source"
+description = "Application source for voter registration"
 possible_values = [ "APPLICATION SOURCE",]
 
 [voter_registration_date]
 field_name = "voter_registration_date"
-description = "DESCRIPTION NEEDED FORvoter_registration_date"
-possible_values = [ "REGISTRATIONDATE", "REGISTRATION_DATE", "EDR", "VOTE_ELIGIBLE_DATE", "EDRDAT",]
+description = "Date of voter registration"
+possible_values = [ "VOTE_ELIGIBLE_DATE", "REGISTRATION_DATE", "EDRDAT", "REGISTRATIONDATE", "EDR",]
 
 [voter_registration_permanent_absentee]
 field_name = "voter_registration_permanent_absentee"
-description = "DESCRIPTION NEEDED FORvoter_registration_permanent_absentee"
+description = "Voter registration status for permanent absentee voting"
 possible_values = [ "IS PERMANENT ABSENTEE",]
 
 [voter_registration_status]
 field_name = "voter_registration_status"
-description = "DESCRIPTION NEEDED FORvoter_registration_status"
+description = "Voter registration status"
 possible_values = [ "VOTER STATUS", "STATUS", "VOTER_STATUS",]
 
 [voter_registration_status_reason]
 field_name = "voter_registration_status_reason"
-description = "DESCRIPTION NEEDED FORvoter_registration_status_reason"
-possible_values = [ "VOTER_STATUS_REASON", "VOTER STATUS REASON",]
+description = "VOTER STATUS REASON"
+possible_values = [ "VOTER STATUS REASON", "VOTER_STATUS_REASON",]
 
 [voter_registration_type]
 field_name = "voter_registration_type"
-description = "DESCRIPTION NEEDED FORvoter_registration_type"
+description = "Voter registration type"
 possible_values = [ "VOTER TYPE",]
 
 [voter_vuid]
 field_name = "voter_vuid"
-description = "DESCRIPTION NEEDED FORvoter_vuid"
-possible_values = [ "VUIDNO", "VUID", "VOTER REG NUMBER", "SOS_VOTERID", "VTRID",]
+description = "Voter identification number"
+possible_values = [ "VOTER REG NUMBER", "SOS_VOTERID", "VUID", "VTRID", "VUIDNO",]
